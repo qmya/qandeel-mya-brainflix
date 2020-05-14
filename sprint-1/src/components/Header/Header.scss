@@ -1,0 +1,25 @@
+@import './partials/mixin';
+@import './partials/variables';
+@font-face {
+    font-family: 'AvenirNextDemiBold';
+    src: url("../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+// USAGE
+body {
+    font-family: 'AvenirNextDemiBold', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__thumbimage {
+        width: 45px;
+        height: 45px;
+    }
+}
