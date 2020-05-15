@@ -1,0 +1,55 @@
+@import '../../styles/partials/mixin';
+@import '../../styles/partials/variables';
+@font-face {
+    font-family: 'AvenirNextDemiBold';
+    src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+.herovideo {
+    background: url('../../Assets/Images/video-list-0.jpg');
+    background-size: cover;
+    min-height: 11.4375rem;
+    width: 100%;
+    position: relative;
+    @include tablet {
+        min-height: 25rem;
+    }
+    @include desktop {
+        max-height: 41.875rem;
+    }
+    &__controller {
+        display: flex;
+        position: absolute;
+        top: 140px;
+    }
+    &__playicon {
+        background-color: black;
+        width: 16px;
+        margin-left: 16px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        opacity: 50%;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    &__line {
+        width: 80px;
+        padding: 10px 20px;
+        background-color: black;
+        border-radius: 10px;
+        margin-left: 8px;
+        opacity: 50%;
+    }
+    &__righticons {
+        padding: 10px 20px;
+        background-color: black;
+        opacity: 50%;
+        border-radius: 10px;
+        margin-left: 8px;
+    }
+    &__fullscreen {
+        padding-right: 16px;
+    }
+}
