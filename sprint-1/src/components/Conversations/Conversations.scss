@@ -1,0 +1,53 @@
+@import '../../styles/partials/mixins';
+
+.comments{
+
+  &-section {
+    // border: 1px solid blue;
+    // justify-content: center;
+    margin: 0 1rem 2.5rem 1rem;
+  }
+
+  &-single {
+    // border: 1px solid red;
+    display: flex;
+    border-bottom: 0.1rem solid $silver;
+    border-bottom-width: thin;
+    padding-bottom: 1.5rem;
+  }
+
+  &__avatar {
+    @include avatar;
+    margin-right: 0.5rem;
+  }
+
+  &__text-header {
+    // border: 1px solid aqua;
+    // @include flex-row;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    padding-bottom: 1rem;
+  }
+
+  &__text-user {
+    @include mobile-header2-sub-header;
+    // border: 1px solid brown;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__text-date {   
+    @include mobile-header4-paragraph;
+    color: $silver;
+    // border: 1px solid brown;
+  }
+
+  &__text {
+    // border: 1px solid maroon;
+    width: auto;
+    height: auto;
+    padding-right: 0;
+
+  }
+}
