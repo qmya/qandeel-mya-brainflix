@@ -1,26 +1,23 @@
 import React from 'react';
-import "./Header.scss";
-import Logo from '../../Assets/Logo/Logo-brainflix.svg';
-import Iconssearch from '../../Assets/Icons/SVG/Icon-search.svg';
-import Iconsplus from '../../Assets/Icons/SVG/Icon-upload.svg';
-import Thumbimage from '../../Assets/Images/Mohan-muruge.jpg';
+import Logo from '../Logo/Logo';
+import Search from '../SearchBar/SearchBar';
+import UploadBtn from '../UploadButton/UploadBtn';
+import AvatarMohan from '../Avatar/Avatar';
+import '../Header/Header.scss';
 
-
-const Header = (props) => {
-  console.log('PROPS', props);
-    return ( 
-    
-      <header className = "header">
-       <img className ="header__logo" src ={Logo} alt="logo of the site"/>
-           <nav className="header__navcontainer">
-           <form className ="header__formcontainer">
-            <input className ="header__searchicon" className ="header__search" type="text" placeholder="  Search" name="search"/>
-           <button className ="header__upload"type="submit">UPLOAD</button>
-           <img className ="header__thumbimage" src = {Thumbimage} alt="Thumb image"/>
-          </form>
-          
-           </nav>
-      </header>
-      );
+function Header() {
+	return (
+		<span className="header__section mobile-padding">
+			<p className="logo">
+				<Logo />
+			</p>
+			<Search />
+			<p className='nav'>
+				<UploadBtn />
+				<AvatarMohan />
+			</p>
+		</span>
+	);
 }
+
 export default Header;
