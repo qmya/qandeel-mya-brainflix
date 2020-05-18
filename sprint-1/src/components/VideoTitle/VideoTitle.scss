@@ -1,9 +1,7 @@
 @import '../../styles/partials/mixins';
-
 .title {
     @include mobile-header1;
     margin: 0;
-
     &-section {
         padding: 2rem 1rem 0 1rem;
         width: 18rem;
@@ -12,19 +10,17 @@
 
 .article {
     border-bottom: 0.01rem solid $silver;
-    border-bottom-width: thin ;
+    border-bottom-width: thin;
     padding-bottom: 1.5rem;
 }
 
 .author {
     padding-top: 1rem;
     padding-bottom: 2rem;
-
     &__video {
         @include mobile-header2-sub-header;
         padding-right: 0.5rem;
     }
-
     &__date {
         @include mobile-header4-paragraph;
         color: $silver;
@@ -35,13 +31,10 @@
     display: flex;
     justify-content: space-between;
     width: 13.125rem;
-
-
-    &-views{
+    &-views {
         padding-right: 0.5rem;
     }
-
-    &-likes{
+    &-likes {
         padding-right: 0.5rem;
     }
 }

@@ -1,10 +1,24 @@
 @import '../../styles/partials/mixins';
-
-
 .header__section {
     height: 10.563rem;
     display: flex;
     flex-direction: column;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__uploadbutton {
+        @include tablet {
+            width: 150px;
+        }
+    }
+    &__search {
+        @include tablet {
+            width: 150px;
+        }
+    }
 }
 
 .logo {
@@ -24,7 +38,7 @@
     background-position: 7%;
     background-color: $mercury;
     padding: 1rem;
-    padding-left: 3rem;  
+    padding-left: 3rem;
 }
 
 .btn {
@@ -32,23 +46,22 @@
     &-upload {
         @include bluebutton;
         @include mobile-header2-sub-header;
-        height: 3rem ;
+        height: 3rem;
         width: 13.875rem;
         margin-top: 0.5rem;
         margin-right: 1rem;
-
-        &:hover{
+        &:hover {
             border: 0.125rem solid $brainflix-blue-dark;
             background-color: $brainflix-blue-dark;
             outline: none;
         }
-        
-        &:focus{
+        &:focus {
             border: 0.125rem solid $brainflix-blue-dark;
             background-color: $brainflix-blue-dark;
             outline: none;
         }
     }
+    @include tablet {}
 }
 
 .avatar__img {
@@ -61,5 +74,3 @@
     align-items: center;
     margin: 0;
 }
-
-

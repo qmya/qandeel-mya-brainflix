@@ -1,38 +1,31 @@
 @import '../../styles/partials/mixins';
-
 .conversation {
     margin: 0;
     padding: 2.5rem 1rem 1rem 1rem;
     width: 18rem;
-    
-    &-heading {
+    &__heading {
         @include mobile-header2-sub-header;
         margin: 0;
         padding-bottom: 2rem;
     }
-
-    &-article {
+    &__article {
         display: flex;
         border-bottom: 0.1rem solid $silver;
         border-bottom-width: thin;
         padding-bottom: 1.5rem;
     }
-
-    &-container {
+    &__container {
         display: flex;
         flex-direction: column;
     }
-
-    &-title {
+    &__title {
         @include mobile-header2-sub-header;
         color: $silver;
     }
-
-    &-form {
+    &__form {
         width: 13.875rem;
     }
-
-    &-box {
+    &__box {
         @include mobile-header4-paragraph;
         color: $black;
         font-weight: bolder;
@@ -43,28 +36,21 @@
         height: 6rem;
         resize: none;
         margin-bottom: 1rem;
-
         &:focus {
             border: 0.1rem solid $brainflix-blue;
         }
     }
-
-
-
-
-    &-btn {
+    &__btn {
         @include bluebutton;
         @include mobile-header2-sub-header;
-        height: 3rem ;
+        height: 3rem;
         width: 13.875rem;
-
-        &:hover{
+        &:hover {
             border: 0.125rem solid $brainflix-blue-dark;
             background-color: $brainflix-blue-dark;
             outline: none;
         }
-        
-        &:focus{
+        &:focus {
             border: 0.125rem solid $brainflix-blue-dark;
             background-color: $brainflix-blue-dark;
             outline: none;

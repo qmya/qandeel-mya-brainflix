@@ -6,7 +6,6 @@ import './MainVideo.scss';
 
 function MainVideo() {
 	return (
-		/* Note: Did not use Video tag since functionality is not required in this sprint */
 		<span className="currently-playing">
 			<div className="currently">
 				<button className="play__btn">

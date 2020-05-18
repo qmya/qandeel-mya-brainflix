@@ -5,16 +5,16 @@ import './ConversationInput.scss';
 function ConversationInput() {
 	return (
 		<div className="conversation">
-			<h1 className="conversation-heading">3 Comments</h1>
-			<article className="conversation-article">
+			<h1 className="conversation__heading">3 Comments</h1>
+			<article className="conversation__article">
 				<span>
 					<AvatarMohan />
 				</span>
-				<span className="conversation-container">
-					<span className="conversation-title">JOIN THE CONVERSATION</span>
-					<form className="conversation-form">
-						<textarea className="conversation-box" name="conversation-box" placeholder="Add a new comment" required/>
-						<button className="conversation-btn">COMMENT</button>
+				<span className="conversation__container">
+					<span className="conversation__title">JOIN THE CONVERSATION</span>
+					<form className="conversation__form">
+						<textarea className="conversation__box" name="conversation-box" placeholder="Add a new comment" required/>
+						<button className="conversation__btn">COMMENT</button>
 					</form>
 				</span>
 			</article>
