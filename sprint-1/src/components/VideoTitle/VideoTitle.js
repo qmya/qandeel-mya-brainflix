@@ -14,8 +14,8 @@ function VideoTitle() {
             </div>
   
             <div className="total">
-              <span><img src={Views} alt="Total View" className='total-views'></img>1,001,023</span>
-              <span><img src={Likes} alt="Total Likes" className='total-likes'></img>110,985</span>
+              <span className='total-align'><img src={Views} alt="Total View" className='total-views'></img>1,001,023</span>
+              <span className='total-align'><img src={Likes} alt="Total Likes" className='total-likes'></img>110,985</span>
             </div>
           </article>
   
