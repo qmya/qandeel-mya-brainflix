@@ -8,13 +8,12 @@ import '../Header/Header.scss';
 function Header() {
 	return (
 		<span className="header__section mobile-padding">
-			
 			<p className="logo">
 				<Logo />
 			</p>
-			<Search className="header__search"/>
+			<Search />
 			<p className='nav'>
-				<UploadBtn className="header__uploadbutton"/>
+				<UploadBtn />
 				<AvatarMohan />
 			</p>
 		</span>
@@ -22,5 +21,3 @@ function Header() {
 }
 
 export default Header;
-
-

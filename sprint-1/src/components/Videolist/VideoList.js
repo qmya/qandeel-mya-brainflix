@@ -6,10 +6,10 @@ const VideoList = props => {
   const array = props.VideoList.map((video, index) => {
     return (
       <section className="video" key={video.id}>
-        <img className="video__img" src={video.img} alt="image"></img>
-        <div className="video__text">
-          <span className="video__text-title">{video.title}</span>
-          <span className="video__text-author">{video.channel}</span>
+        <img className="video__img" src={video.img} alt="video"></img>
+        <div className="video-text">
+          <span className="video-title">{video.title}</span>
+          <span className="video-author">{video.channel}</span>
         </div>
       </section>
     )

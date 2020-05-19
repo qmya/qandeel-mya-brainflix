@@ -6,13 +6,16 @@ import './MainVideo.scss';
 
 function MainVideo() {
 	return (
-		<span className="currently-playing">
+		/* Note: Did not use Video tag since functionality is not required in this sprint */
+		<div className='video-background'>
+			<span className="currently-playing">
 			<div className="currently">
 				<button className="play__btn">
 					<img src={Play} alt="Click here to play" />
 				</button>
 				<span className="progress-container">
-					<progress min="0" max="100" value="63" />
+					<progress min="0" max="100" value="0" />
+					<p className='progress-time'> 0:00/0:42</p>
 				</span>
 				<span className="container">
 					<button>
@@ -24,6 +27,8 @@ function MainVideo() {
 				</span>
 			</div>
 		</span>
+		</div>
+		
 	);
 }
 export default MainVideo;

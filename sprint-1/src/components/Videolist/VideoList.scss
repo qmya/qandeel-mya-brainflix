@@ -1,25 +1,34 @@
 @import '../../styles/partials/mixins';
+
 .video {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+  
+  &__img {
+    width: 7.5rem;
+    height: 4.375rem;
+    border-radius: 0.25rem;
+  }
+  &-text {
+    padding-left: 1rem;
     display: flex;
-    margin-bottom: 24px;
-    &__img {
-        width: 7.5rem;
-        height: 4.375rem;
-        margin-right: 1rem;
-    }
-    &__text {
-        min-width: 9.75rem;
-        max-width: 13rem;
-        margin-right: 0;
-    }
-    &__text-title {
-        font-family: 'Avenir demi';
-        font-size: 0.8rem;
-    }
-    &__text-author {
-        @extend .video__text-title;
-        font-family: 'Avenir';
-    }
+    flex-direction: column;
+  }
+  &-title {
+    @include mobile-header2-sub-header;
+    font-size: 0.7rem;
+    width: 8.75rem;
+    margin: 0;
+  }
+  &-author {
+    @include mobile-header4-paragraph;
+    font-size: 0.65rem;
+    min-width: 9.75rem;
+    margin: 0;
+    padding-top: 1rem;
+  }
+  
+  @include laptop {
+    margin-bottom: 2.2rem;
+  }
 }

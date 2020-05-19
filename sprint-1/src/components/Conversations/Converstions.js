@@ -7,13 +7,13 @@ const Conversations = props => {
   return (
   <section className="comments-section" key={conversations.id}>
     <div className="comments-single">
-      <img className="comments__avatar" src={conversations.userAvatar} alt="userAvatar"></img>
-      <article className="comments__text">
-        <div className="comments__text-header">
-          <h5 className="comments__text-user">{conversations.name}</h5>  
-          <span className="comments__text-date">{conversations.date}</span>
+      <img className="comments-avatar" src={conversations.userAvatar} alt="userAvatar"></img>
+      <article className="comments-text">
+        <div className="comments-header">
+          <h5 className="comments-user">{conversations.name}</h5>  
+          <span className="comments-date">{conversations.date}</span>
         </div>  
-        <span className="comments__text-own">{conversations.comment}</span>
+        <span className="comments-paragraph">{conversations.comment}</span>
       </article>
     </div>
   </section>      
