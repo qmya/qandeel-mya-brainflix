@@ -20,15 +20,18 @@ class App extends React.Component {
         <section>
            <Header />        {/* contains logo + search box + upload button + avatar */}
            <MainVideo />    {/* Hero video, playing current/selected video */}
-           <VideoTitle /> {/* Hero Video Title, Views and Likes */}
         </section>
-         <section> 
+      <section className='laptop-style'>
+          <section>
+          <VideoTitle /> {/* Hero Video Title, Views and Likes */}
            <ConversationInput />   {/* textArea for user input */}
           <Comments ConversationsHistory={this.state.ConversationsHistory}/> {/* output containg users comments */}
-         </section> 
-        <aside>
+          </section> 
+         <aside className='aside'>
+          <h1 className='next-video'>NEXT VIDEO</h1>
           <VideoList VideoList={this.state.VideoList} /> {/* list of videos avilable to be played */}
         </aside>
+      </section>
       </ >
       );
   }
