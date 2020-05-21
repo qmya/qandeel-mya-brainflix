@@ -29,8 +29,9 @@ class VideoDetail extends React.Component{
             
             <Form/>
             <Comments commentList={this.state.commentList}/> 
-            <aside>
-            <h5 className="nextvideo__header">NEXT VIDEO</h5>
+            
+            <aside className="nextvideo__container">
+            {/* <h5 className="nextvideo__header">NEXT VIDEO</h5> */}
               <VideoList NextVideo={this.state.NextVideo} /> 
               </aside>
             </section> 

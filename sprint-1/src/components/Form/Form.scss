@@ -1,8 +1,7 @@
+@import '../../styles/partials/mixin';
 .comments {
-    width: 320px;
-    &__counter {
-        font-size: 16px;
-        line-height: 24px;
+    &__header {
+        @include mobile-subheading;
         padding-bottom: 32px;
         padding-left: 16px;
     }
@@ -18,21 +17,23 @@
         margin-top: 20px;
     }
     &__title {
-        color: #AFAFAF;
-        font-size: 16px;
-        line-height: 24px;
+        @include mobile-subheading;
+        color: $silver;
     }
     &__area {
         box-sizing: border-box;
-        font-size: 16px;
-        line-height: 24px;
+        @include mobile-paragraph;
         width: 220px;
         height: 124px;
-        border-radius: 5px;
+        border-radius: 4px;
         padding-top: 10px;
         padding-left: 10px;
         border: 1px solid #AFAFAF;
         margin-bottom: 16px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
     }
     &__button {
         margin-bottom: 24px;
@@ -40,8 +41,13 @@
         line-height: 24px;
         width: 220px;
         height: 48px;
-        background-color: #0095FF;
-        color: #FFFFFF;
-        border-radius: 5px;
+        border: 1px solid $Brainflix-blue-light;
+        background-color: $Brainflix-blue-light;
+        color: $white;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
     }
 }

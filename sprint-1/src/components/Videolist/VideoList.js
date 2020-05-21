@@ -10,15 +10,20 @@ const VideoList = props => {
     {/* <h5 className="nextvideo__header">NEXT VIDEO</h5> */}
     <span className="nextvideo__wrapper">
       <img className="nextvideo__image" src={NextVideo.img} alt="next video images"></img>
-      <span className="nextvideo__heading2">
-         <h5 className="nextvideo__heading">{NextVideo.title}</h5>  
-          <span className="nextvideo__heading">{NextVideo.channel}</span>
+      <span className="nextvideo__heading">
+         <h5 className="nextvideo__title">{NextVideo.title}</h5>  
+          <span className="nextvideo__channel">{NextVideo.channel}</span>
         </span>  
        </span>
   </section>      
       )
     })
-   return (<span>{NextVideo}</span>)
+   return (
+     <div><h5 className="nextvideo__nextheader">NEXT VIDEO</h5>
+     {NextVideo}
+     </div>
+    
+   )
 }
 
 
@@ -26,4 +31,9 @@ const VideoList = props => {
 export default VideoList;
 
 
- 
+// return (
+//   <div className="next__video-main">
+//     <h4 className="next__video-main-heading">NEXT VIDEO</h4>
+//     {videoImage}
+//   </div>
+// );

@@ -1,16 +1,17 @@
 @import '../../styles/partials/mixin';
 .nextvideo {
-    display: flex;
-    &__container {
+    &__nextheader {
+        margin-top: 40px;
+        padding-left: 16px;
+        @include mobile-labels;
+    }
+    &__wrapper {
         display: flex;
         align-items: center;
         width: 320px;
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 24px;
-    }
-    &__wrapper {
-        display: flex;
     }
     &__image {
         width: 120px;
@@ -21,17 +22,14 @@
         flex-direction: column;
         justify-content: center;
         width: 156px;
-        font-size: 12px;
-        line-height: 20px;
         margin-left: 16px;
     }
-    &__heading2 {
-        // font-size: 16px;
-        // line-height: 22px;
+    &__title {
+        @include mobile-subheading;
         margin: 0;
     }
-    &__author {
-        // @extend .nextvideo__heading2;
+    &__channel {
+        @include mobile-paragraph;
         margin: 0;
     }
 }

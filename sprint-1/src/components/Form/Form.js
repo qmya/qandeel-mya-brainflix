@@ -5,7 +5,7 @@ class Form extends React.Component {
    render(){
        return(
         <section className="comments">
-        <h2 className="comments__counter">3 Comments</h2>
+        <h2 className="comments__header">3 Comments</h2>
           <article className="comments__form">
             <div>
               <img src={Thumbimage} alt=''className="comments__thumbnail" />
@@ -14,7 +14,7 @@ class Form extends React.Component {
               
                 <span className="comments__title">JOIN THE CONVERSATION</span> 
                 <form  className="tablet-form"> 
-                <textarea type="text" name ="comments-form" placeholder="Add a comment" className="comments__area"></textarea>
+                <textarea type="text" name ="comments__area" placeholder="Add a comment" className="comments__area"></textarea>
                 <button className="comments__button">COMMENT</button>
               </form>
             </div>
