@@ -1,0 +1,49 @@
+    @import '../../styles/partials/mixin';
+    @import '../../styles/partials/variables';
+    @font-face {
+        font-family: 'AvenirNextRegular';
+        src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+    }
+    
+    .subheading {
+        font-family: 'AvenirNextRegular';
+        padding-left: 16px;
+        padding-right: 16px;
+        &__bmx {
+            padding-top: 32px;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        &__redcowdate {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // justify-content: space-around;
+        }
+        &__redcow {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__date {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: lighter;
+            color: #AFAFAF;
+        }
+        &__icons {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            border-bottom: 2px solid #AFAFAF;
+            // justify-content: space-around;
+        }
+        &__views {
+            padding-right: 8px;
+        }
+        &__likes {
+            padding-right: 8px;
+        }
+        &__paragraph {
+            padding-right: 32px;
+        }
+    }

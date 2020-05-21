@@ -1,0 +1,16 @@
+@import '../../styles/partials/mixin';
+@import '../../styles/partials/variables';
+.comments {
+    width: 100%;
+    &__flex1 {
+        display: flex;
+        justify-content: center;
+        width: 288px;
+    }
+    &__image {
+        @include thumb-image;
+    }
+    &__flex2 {
+        display: flex;
+    }
+}
