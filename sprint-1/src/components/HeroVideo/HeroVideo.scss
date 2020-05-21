@@ -1,10 +1,4 @@
 @import '../../styles/partials/mixin';
-@import '../../styles/partials/variables';
-@font-face {
-    font-family: 'AvenirNextDemiBold';
-    src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
-}
-
 .herovideo {
     background: url('../../Assets/Images/video-list-0.jpg');
     background-size: cover;
@@ -27,6 +21,9 @@
         @include tablet {
             margin-left: 24px;
         }
+    }
+    &__video {
+        height: 183px;
     }
     &__wrap {
         @include video-controller;
@@ -59,6 +56,7 @@
     }
     &__righticons {
         margin-left: 8px;
+        display: flex;
         @include video-controller;
     }
     &__fullscreen {

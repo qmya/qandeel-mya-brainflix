@@ -1,16 +1,38 @@
 @import '../../styles/partials/mixin';
-@import '../../styles/partials/variables';
-.comments {
-    width: 100%;
-    &__flex1 {
-        display: flex;
-        justify-content: center;
-        width: 288px;
+.comment {
+    @include mobile-subheading;
+    margin: 0;
+    &__wrap {
+        border-bottom: 1px solid black;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 20px;
     }
     &__image {
         @include thumb-image;
+        margin-top: 28px;
     }
-    &__flex2 {
+    &__header {
         display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    &__namedate {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        padding-right: 16px;
+        @include mobile-subheading;
+    }
+    &__date {
+        @include mobile-lists-contact-info;
+        color: $silver;
+        padding-left: 24px;
+    }
+    &__commentwrap {
+        margin-left: 65px;
+        display: flex;
+        @include mobile-paragraph;
     }
 }

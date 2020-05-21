@@ -1,10 +1,4 @@
 @import '../../styles/partials/mixin';
-@import '../../styles/partials/variables';
-@font-face {
-    font-family: 'AvenirNextDemiBold';
-    src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
-}
-
 .nextvideo {
     display: flex;
     &__container {
