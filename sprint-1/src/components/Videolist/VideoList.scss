@@ -1,34 +1,43 @@
-@import '../../styles/partials/mixins';
+@import '../../styles/partials/mixin';
+@import '../../styles/partials/variables';
+@font-face {
+    font-family: 'AvenirNextDemiBold';
+    src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
 
-.video {
-  display: flex;
-  margin-bottom: 1.5rem;
-  
-  &__img {
-    width: 7.5rem;
-    height: 4.375rem;
-    border-radius: 0.25rem;
-  }
-  &-text {
-    padding-left: 1rem;
+.nextvideo {
     display: flex;
-    flex-direction: column;
-  }
-  &-title {
-    @include mobile-header2-sub-header;
-    font-size: 0.7rem;
-    width: 8.75rem;
-    margin: 0;
-  }
-  &-author {
-    @include mobile-header4-paragraph;
-    font-size: 0.65rem;
-    min-width: 9.75rem;
-    margin: 0;
-    padding-top: 1rem;
-  }
-  
-  @include laptop {
-    margin-bottom: 2.2rem;
-  }
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 320px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 24px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__image {
+        width: 120px;
+        height: 80px;
+    }
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 156px;
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 16px;
+    }
+    &__heading2 {
+        // font-size: 16px;
+        // line-height: 22px;
+        margin: 0;
+    }
+    &__author {
+        // @extend .nextvideo__heading2;
+        margin: 0;
+    }
 }

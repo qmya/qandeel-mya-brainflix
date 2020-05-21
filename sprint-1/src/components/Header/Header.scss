@@ -1,117 +1,80 @@
-@import '../../styles/partials/mixins';
+@import '../../styles/partials/mixin';
+@import '../../styles/partials/variables';
+@font-face {
+    font-family: 'AvenirNextDemiBold';
+    src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
 
+header {
+    font-family: 'AvenirNextDemiBold', sans-serif;
+}
 
-.header__section {
-    height: 10.563rem;
+.header {
     display: flex;
     flex-direction: column;
-
+    width: 320px;
     @include tablet {
         flex-direction: row;
+    }
+    &__logo {
+        display: flex;
         align-items: center;
-        height: 5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 28px;
+        width: 288px;
     }
-
-    @include laptop {
-        width: 67.5rem;
-        padding: 0;
-        margin: 0;
+    &__formcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 16px;
+        margin-right: 16px;
     }
-}
-
-.logo {
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-
-    @include tablet {
-        margin: 0;
-        height: 1.5rem;
-        padding-right: 10.563rem;
+    /* &__searchicon {
+        background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
+        background-repeat: no-repeat;
+    }*/
+    &__search {
+        background-image: url('../../Assets/Icons/SVG/Icon-search.svg');
+        background-position: 15px;
+        padding: 0px 15px 0px 40px;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        // background-position: left;
+        // background-origin: content-box;
+        background-color: #FAFAFA;
+        width: 288px;
+        height: 48px;
+        // padding-left: 30px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
     }
-
-    @include laptop {
-        padding-right: 31.8125rem;
-        padding-left: 4rem;        
+    &__upload {
+        width: 224px;
+        height: 48px;
+        margin-top: 8px;
+        background-color: #0095FF;
+        color: #FFFFFF;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-bottom: 16px;
     }
-}
-
-.search {
-    @include mobile-header4-paragraph;
-    font-weight: bold;
-    border: 1px solid $silver;
-    border-radius: 0.15rem;
-    background-image: url('../../assets/icons/svg/icon-search.svg');
-    background-repeat: no-repeat;
-    background-position: 7%;
-    background-color: $mercury;
-    padding: 1rem;
-    padding-left: 3rem;
-
-    @include tablet {
-        margin-right: 1.5rem;
-        padding-right: 3.3rem;
-        width: 10rem;
-    }
-}
-
-.btn {
-    padding-right: 1rem;
-    &-upload {
-        @include bluebutton;
-        @include mobile-header2-sub-header;
-        height: 3rem ;
-        width: 13.875rem;
-        margin-top: 0.5rem;
-        margin-right: 1rem;
-
-        &:hover{
-            border: 0.125rem solid $brainflix-blue-dark;
-            background-color: $brainflix-blue-dark;
-            outline: none;
-        }
-        
-        &:focus{
-            border: 0.125rem solid $brainflix-blue-dark;
-            background-color: $brainflix-blue-dark;
-            outline: none;
-        }
-
-        @include tablet {
-            width: 7rem;
-            height: 3.3rem;
-            margin-bottom: 0.4rem;
-        }
-
-        @include laptop {
-            margin-right: 1.5rem;
-        }
-    }
-
-    @include tablet {
-        padding-right: 0.2rem;
+    &__thumbimage {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-left: 16px;
+        margin-top: 8px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
     }
 }
-
-.avatar__img {
-    @include avatar;
-    margin-top: 0.5rem;
-
-    @include tablet {
-        margin: 0.5rem;
-        margin-top: 0.8rem;
-        margin-left: 0;
-    }
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-

@@ -1,23 +1,25 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
-import Search from '../SearchBar/SearchBar';
-import UploadBtn from '../UploadButton/UploadBtn';
-import AvatarMohan from '../Avatar/Avatar';
-import '../Header/Header.scss';
+import "./Header.scss";
+import Logo from '../../Assets/Logo/Logo-brainflix.svg';
+import Iconsplus from '../../Assets/Icons/SVG/Icon-upload.svg';
+import Thumbimage from '../../Assets/Images/Mohan-muruge.jpg';
 
-function Header() {
-	return (
-		<span className="header__section mobile-padding">
-			<p className="logo">
-				<Logo />
-			</p>
-			<Search />
-			<p className='nav'>
-				<UploadBtn />
-				<AvatarMohan />
-			</p>
-		</span>
-	);
+
+const Header = (props) => {
+  console.log('PROPS', props);
+    return ( 
+    
+      <header className = "header">
+       <img className ="header__logo" src ={Logo} alt="logo of the site"/>
+           <nav className="header__navcontainer">
+           <form className ="header__formcontainer">
+            <input id="searchicon"className ="header__searchicon" className ="header__search" type="text" placeholder="  Search" name="search"/>
+           <button className ="header__upload"type="submit"><img className ="header__iconplus" src ={Iconsplus} alt="logo add icon"/>UPLOAD</button>
+           <img className ="header__thumbimage" src = {Thumbimage} alt="Nav bar thumb nail"/>
+          </form>
+          
+           </nav>
+      </header>
+      );
 }
-
 export default Header;
