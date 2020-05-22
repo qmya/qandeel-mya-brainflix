@@ -2,17 +2,23 @@
     .subheading {
         padding-left: 16px;
         padding-right: 16px;
+        width: 87%;
         &__redwrapper {
             @include tablet {
                 display: flex;
                 align-items: baseline;
                 border-bottom: 1px solid $silver;
+                justify-content: space-between;
             }
         }
         &__bmx {
             margin: 0;
             @include mobile-heading;
             padding-top: 32px;
+            @include tablet{
+                @include tablet-headerone ;
+            }
+
         }
         &__redcowdate {
             margin: 0;
@@ -24,6 +30,9 @@
             margin: 0;
             font-size: 24px;
             line-height: 32px;
+             @include tablet{
+                @include tablet-headertwo;
+            }
         }
         &__date {
             margin: 0;
@@ -47,11 +56,19 @@
         &__heart {
             padding-left: 64px;
             padding-right: 8px;
+            @include tablet {
+                padding-left:24px;
+               
+            }
         }
         &__paragraph {
             margin: 0;
             padding-top: 24px;
             padding-bottom: 40px;
             @include mobile-paragraph;
+            @include tablet {
+             @include tablet-paragraph;
+            }
+
         }
     }

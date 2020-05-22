@@ -4,6 +4,9 @@
         margin-top: 40px;
         padding-left: 16px;
         @include mobile-labels;
+        @include tablet {
+            @include tablet-subheading;
+        }
     }
     &__container {
         display: flex;

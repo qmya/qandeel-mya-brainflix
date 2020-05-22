@@ -1,19 +1,20 @@
 @import '../../styles/partials/mixin';
-header {
-    font-family: 'AvenirNextBold';
-}
+
 
 .header {
     display: flex;
     flex-direction: column;
     height: 10.53rem;
     @include tablet {
+        padding-top: 10px;
         flex-direction: row;
         align-items: center;
-        height: 5rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1rem;
+        height: 88px;
+        // height: 5rem;
+        // padding-left: 1.5rem;
+        // padding-right: 1.5rem;
+        // padding-bottom: 1rem;
+        display: flex;
     }
     // margin-left: 24px;
     // margin-right: 24px;
@@ -31,8 +32,11 @@ header {
         align-items: baseline;
         @include tablet {
             margin: 0;
-            height: 1.5rem;
-            padding-right: 10.563rem;
+            padding-right: 2.563rem;
+                height: 2rem;
+                padding-left: 16px;
+            // height: 1.5rem;
+            // padding-right: 10.563rem;
         }
     }
     &__formcontainer {
@@ -60,10 +64,12 @@ header {
             margin-right: 1.5rem;
             padding-right: 3.3rem;
             width: 10rem;
+            height: 55px;
         }
     }
     &__iconplus {
         padding-right: 10px;
+        
     }
     &__upload {
         width: 224px;
@@ -86,6 +92,8 @@ header {
             height: 60px;
             width: 150px;
             margin-left: 24px;
+     @include tablet-paragraph;
+       
         }
     }
     &__thumbimage {

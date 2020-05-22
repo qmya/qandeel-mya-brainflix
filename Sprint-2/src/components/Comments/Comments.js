@@ -5,7 +5,7 @@ const Comments = props => {
   console.log(props);  
   const commentList = props.commentList.map((commentList) => {   
   return (
-  <section className="comments-section" key={commentList.id}>
+  <section className="comment__section" key={commentList.id}>
     <div className="comment__wrap">
     
       <article className="comment__namedate">
