@@ -25,6 +25,3 @@ render(){
 }
 
 export default App;
-
-
-

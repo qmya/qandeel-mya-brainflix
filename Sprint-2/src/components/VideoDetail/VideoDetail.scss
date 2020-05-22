@@ -1,12 +1,12 @@
-// @import '../../styles/partials/mixin';
-// .videodetail__container {
-//   @include desktop{
-// //   width:700px;
-//   }
-//   &__wrap{
-//      @include desktop{
-//          display: flex;
-//     justify-content: center;
-//      } 
-//   }
-// }
+@import '../../styles/partials/mixin';
+.videodetail__container {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
+    &__wrap {
+        @include desktop {
+            width: 712px;
+        }
+    }
+}

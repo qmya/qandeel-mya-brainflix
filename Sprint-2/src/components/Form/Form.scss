@@ -4,8 +4,8 @@
         @include mobile-subheading;
         padding-bottom: 32px;
         padding-left: 16px;
-        @include tablet{
-            @include tablet-subheading;
+        @include tablet {
+            padding-left: 24px;
         }
     }
     &__form {
@@ -27,9 +27,6 @@
     &__title {
         @include mobile-subheading;
         color: $silver;
-         @include tablet{
-            @include tablet-subheading;
-        }
     }
     &__area {
         box-sizing: border-box;
@@ -50,7 +47,6 @@
             padding: 12px;
             width: 440px;
             margin-right: 16px;
-            @include tablet-paragraph;
         }
     }
     &__button {
@@ -67,9 +63,8 @@
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
-         @include desktop{
-                //  width: 149px;
-
-         }
+        @include desktop {
+            width: 158px;
+        }
     }
 }

@@ -21,8 +21,7 @@ const VideoList = props => {
    return (
      <section className="nextvideo__container">
      <aside >
-     <div>
-     <h5 className="nextvideo__nextheader">NEXT VIDEO</h5>
+     <div><h5 className="nextvideo__nextheader">NEXT VIDEO</h5>
      {NextVideo}
      </div>
      </aside>
@@ -35,3 +34,9 @@ const VideoList = props => {
 export default VideoList;
 
 
+// return (
+//   <div className="next__video-main">
+//     <h4 className="next__video-main-heading">NEXT VIDEO</h4>
+//     {videoImage}
+//   </div>
+// );
