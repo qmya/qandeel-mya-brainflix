@@ -2,6 +2,13 @@
     .subheading {
         padding-left: 16px;
         padding-right: 16px;
+        &__redwrapper {
+            @include tablet {
+                display: flex;
+                align-items: baseline;
+                border-bottom: 1px solid $silver;
+            }
+        }
         &__bmx {
             margin: 0;
             @include mobile-heading;
@@ -30,6 +37,9 @@
             padding-top: 32px;
             padding-bottom: 24px;
             border-bottom: 1px solid $silver;
+            @include tablet {
+                border: none;
+            }
         }
         &__eye {
             padding-right: 8px;

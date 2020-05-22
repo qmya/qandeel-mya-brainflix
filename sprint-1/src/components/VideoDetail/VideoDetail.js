@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './VideoDetail.scss'
 import HeroVideo from '../HeroVideo/HeroVideo';
 import SubHeading from '../SubHeading/SubHeading';
 import Form from '../Form/Form';
@@ -25,16 +25,17 @@ class VideoDetail extends React.Component{
   
             <section>
             <HeroVideo VideoList={this.state.video}/>   
+            <span className="videodetail__container">
             <SubHeading HeroHeading={this.state.HeroHeading}/> 
             
             <Form/>
             <Comments commentList={this.state.commentList}/> 
             
-            <aside className="nextvideo__container">
-            {/* <h5 className="nextvideo__header">NEXT VIDEO</h5> */}
-              <VideoList NextVideo={this.state.NextVideo} /> 
-              </aside>
-            </section> 
+            {/* <aside className="nextvideo__container"> */}
+            <VideoList NextVideo={this.state.NextVideo} /> 
+              {/* </aside> */}
+              </span>
+              </section> 
            
 
         </ >

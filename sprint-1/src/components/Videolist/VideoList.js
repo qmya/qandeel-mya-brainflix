@@ -19,10 +19,13 @@ const VideoList = props => {
       )
     })
    return (
+     <section className="nextvideo__container">
+     <aside >
      <div><h5 className="nextvideo__nextheader">NEXT VIDEO</h5>
      {NextVideo}
      </div>
-    
+     </aside>
+     </section>
    )
 }
 

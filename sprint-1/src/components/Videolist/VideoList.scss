@@ -5,6 +5,9 @@
         padding-left: 16px;
         @include mobile-labels;
     }
+    &__container {
+        display: flex;
+    }
     &__wrapper {
         display: flex;
         align-items: center;

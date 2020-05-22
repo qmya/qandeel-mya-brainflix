@@ -1,5 +1,5 @@
 import React from 'react';
-import MainVideo from '../../Assets/Images/video-list-0.jpg';
+// import MainVideo from '../../Assets/Images/video-list-0.jpg';
 import PlayIcon from '../../Assets/Icons/SVG/Icon-play.svg';
 import FullScreen from '../../Assets/Icons/SVG/Icon-fullscreen.svg';
 import FullVolume from '../../Assets/Icons/SVG/Icon-volume.svg';
@@ -12,7 +12,7 @@ const HeroVideo =() =>{
         
         <div className ="herovideo">
           
-         <img className ="herovideo__video" src ={MainVideo} alt="main video of the site"/>
+         {/* <img className ="herovideo__video" src ={MainVideo} alt="main video of the site"/> */}
         <div className="herovideo__controller">
         <div className ="herovideo__wrap">
         <img className ="herovideo__playicon" src ={PlayIcon} alt="main video of the site"/> 

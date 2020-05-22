@@ -1,32 +1,39 @@
 @import '../../styles/partials/mixin';
-@font-face {
-    font-family: 'AvenirNextDemiBold';
-    src: url("../../Assets/_Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
-}
-
 header {
-    font-family: 'AvenirNextDemiBold', sans-serif;
+    font-family: 'AvenirNextBold';
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    // width: 320px;
+    height: 10.53rem;
     @include tablet {
         flex-direction: row;
+        align-items: center;
+        height: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
     }
+    // margin-left: 24px;
+    // margin-right: 24px;
+    // display: flex;
+    // flex-direction: row;
     &__wrapper {
         height: 48px;
         display: flex;
         align-self: center;
     }
     &__logo {
-        // display: flex;
-        // align-items: center;
-        padding-top: 12px;
-        // padding-bottom: 10px;
-        height: 28px;
-        // width: 288px;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        @include tablet {
+            margin: 0;
+            height: 1.5rem;
+            padding-right: 10.563rem;
+        }
     }
     &__formcontainer {
         display: flex;
@@ -34,10 +41,6 @@ header {
         padding-left: 16px;
         padding-right: 16px;
     }
-    /* &__searchicon {
-        background-image: url(../../Assets/Icons/SVG/Icon-search.svg);
-        background-repeat: no-repeat;
-    }*/
     &__search {
         background-image: url('../../Assets/Icons/SVG/Icon-search.svg');
         background-position: 15px;
@@ -45,17 +48,19 @@ header {
         display: flex;
         align-items: center;
         background-repeat: no-repeat;
-        //background-position: left;
-        //background-origin: content-box;
-        background-color: $white;
+        background-color: $mercury;
         width: 288px;
         height: 48px;
-        //padding-left: 30px;
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
+        @include tablet {
+            margin-right: 1.5rem;
+            padding-right: 3.3rem;
+            width: 10rem;
+        }
     }
     &__iconplus {
         padding-right: 10px;
@@ -76,6 +81,12 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        @include tablet {
+            margin-top: 0;
+            height: 60px;
+            width: 150px;
+            margin-left: 24px;
+        }
     }
     &__thumbimage {
         width: 48px;

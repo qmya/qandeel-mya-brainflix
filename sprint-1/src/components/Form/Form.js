@@ -13,7 +13,7 @@ class Form extends React.Component {
             <div className="form-width">
               
                 <span className="comments__title">JOIN THE CONVERSATION</span> 
-                <form  className="tablet-form"> 
+                <form  className="comments__tablet"> 
                 <textarea type="text" name ="comments__area" placeholder="Add a comment" className="comments__area"></textarea>
                 <button className="comments__button">COMMENT</button>
               </form>
