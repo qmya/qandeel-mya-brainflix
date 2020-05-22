@@ -1,14 +1,15 @@
 @import '../../styles/partials/mixin';
 .comment {
-    width:720px;
+    width: 720px;
     @include mobile-subheading;
     margin: 0;
     &__wrap {
         border-bottom: 1px solid black;
-        margin-left: 16px;
-        margin-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
         padding-bottom: 20px;
-        width:100%;
+        box-sizing: border-box;
+        width: 100%;
     }
     &__image {
         @include thumb-image;
@@ -26,25 +27,24 @@
     &__name {
         padding-right: 16px;
         @include mobile-subheading;
-         @include tablet{
-            @include tablet-subheading;  
+        @include tablet {
+            @include tablet-subheading;
         }
     }
     &__date {
         @include mobile-lists-contact-info;
         color: $silver;
         padding-left: 24px;
-        @include tablet{
-            @include tablet-paragraph;  
+        @include tablet {
+            @include tablet-paragraph;
         }
-       
     }
     &__commentwrap {
         margin-left: 65px;
         display: flex;
         @include mobile-paragraph;
-        @include tablet{
-            @include tablet-paragraph;  
+        @include tablet {
+            @include tablet-paragraph;
         }
     }
 }

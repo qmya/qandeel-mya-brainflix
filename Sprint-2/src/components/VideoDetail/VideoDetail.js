@@ -30,11 +30,11 @@ class VideoDetail extends React.Component{
             
             <Form/>
             <Comments commentList={this.state.commentList}/> 
-            
+            </span>
             {/* <aside className="nextvideo__container"> */}
             <VideoList NextVideo={this.state.NextVideo} /> 
               {/* </aside> */}
-              </span>
+              
               </section> 
            
 

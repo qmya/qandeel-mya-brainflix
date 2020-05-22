@@ -6,7 +6,7 @@ const Comments = props => {
   const commentList = props.commentList.map((commentList) => {   
   return (
   <section className="comment__section" key={commentList.id}>
-  <div className="comment__wrap">
+  
     <div className="comment__wrap">
     
       <article className="comment__namedate">
