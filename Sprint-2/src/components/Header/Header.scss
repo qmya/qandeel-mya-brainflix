@@ -1,0 +1,102 @@
+@import '../../styles/partials/mixin';
+header {
+    font-family: 'AvenirNextBold';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 10.53rem;
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+        height: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    // margin-left: 24px;
+    // margin-right: 24px;
+    // display: flex;
+    // flex-direction: row;
+    &__wrapper {
+        height: 48px;
+        display: flex;
+        align-self: center;
+    }
+    &__logo {
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        @include tablet {
+            margin: 0;
+            height: 1.5rem;
+            padding-right: 10.563rem;
+        }
+    }
+    &__formcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__search {
+        background-image: url('../../Assets/Icons/SVG/Icon-search.svg');
+        background-position: 15px;
+        padding: 0px 15px 0px 40px;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-color: $mercury;
+        width: 288px;
+        height: 48px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        @include tablet {
+            margin-right: 1.5rem;
+            padding-right: 3.3rem;
+            width: 10rem;
+        }
+    }
+    &__iconplus {
+        padding-right: 10px;
+    }
+    &__upload {
+        width: 224px;
+        height: 48px;
+        margin-top: 8px;
+        background-color: $Brainflix-blue-light;
+        color: $white;
+        border: 1px solid $Brainflix-blue-light;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include tablet {
+            margin-top: 0;
+            height: 60px;
+            width: 150px;
+            margin-left: 24px;
+        }
+    }
+    &__thumbimage {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-left: 16px;
+        margin-top: 8px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}

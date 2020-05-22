@@ -1,0 +1,108 @@
+@import 'variables';
+@import 'colors';
+@import 'fonts';
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin down-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin video-controller {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+@mixin thumb-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+//mobile typography
+@mixin mobile-heading {
+    font-family: 'AvenirNextBold';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin mobile-subheading {
+    font-family: 'AvenirNextBold';
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin mobile-paragraph {
+    font-family: 'AvenirNextRegular';
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin mobile-lists-contact-info {
+    font-family: 'AvenirNextRegular';
+    font-size: 13px;
+    line-height: 18px;
+}
+
+@mixin mobile-labels {
+    font-family: 'AvenirNextRegular';
+    font-size: 12px;
+    line-height: 20px;
+    color: $silver;
+}
+
+//tablet typography
+@mixin tablet-hero-heading {
+    font-family: 'AvenirNextBold';
+    font-size: 60px;
+    line-height: 68px;
+}
+
+@mixin tablet-headerone {
+    font-family: 'AvenirNextBold';
+    font-size: 36px;
+    line-height: 44px;
+}
+
+@mixin tablet-headertwo {
+    font-family: 'AvenirNextBold';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin tablet-subheading {
+    font-family: 'AvenirNextBold';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin tablet-paragraph {
+    font-family: 'AvenirNextRegular';
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@mixin tablet-lists-contact-info {
+    font-family: 'AvenirNextRegular';
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin tablet-labels {
+    font-family: 'AvenirNextRegular';
+    font-size: 12px;
+    line-height: 20px;
+    color: $silver;
+}

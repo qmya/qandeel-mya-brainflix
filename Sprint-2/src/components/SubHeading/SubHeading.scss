@@ -1,0 +1,57 @@
+    @import '../../styles/partials/mixin';
+    .subheading {
+        padding-left: 16px;
+        padding-right: 16px;
+        &__redwrapper {
+            @include tablet {
+                display: flex;
+                align-items: baseline;
+                border-bottom: 1px solid $silver;
+            }
+        }
+        &__bmx {
+            margin: 0;
+            @include mobile-heading;
+            padding-top: 32px;
+        }
+        &__redcowdate {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            padding-top: 16px;
+        }
+        &__redcow {
+            margin: 0;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__date {
+            margin: 0;
+            padding-left: 8px;
+            @include mobile-labels;
+            font-size: 22px;
+        }
+        &__icons {
+            display: flex;
+            align-items: center;
+            padding-top: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid $silver;
+            @include tablet {
+                border: none;
+            }
+        }
+        &__eye {
+            padding-right: 8px;
+        }
+        &__heart {
+            padding-left: 64px;
+            padding-right: 8px;
+        }
+        &__paragraph {
+            margin: 0;
+            padding-top: 24px;
+            padding-bottom: 40px;
+            @include mobile-paragraph;
+        }
+    }

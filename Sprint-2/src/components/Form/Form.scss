@@ -1,0 +1,64 @@
+@import '../../styles/partials/mixin';
+.comments {
+    &__header {
+        @include mobile-subheading;
+        padding-bottom: 32px;
+        padding-left: 16px;
+    }
+    &__form {
+        display: flex;
+    }
+    &__tablet {
+        @include tablet {
+            display: flex;
+        }
+    }
+    &__thumbnail {
+        width: 48px;
+        height: 48px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    &__title {
+        @include mobile-subheading;
+        color: $silver;
+    }
+    &__area {
+        box-sizing: border-box;
+        @include mobile-paragraph;
+        width: 220px;
+        height: 124px;
+        border-radius: 4px;
+        padding-top: 10px;
+        padding-left: 10px;
+        border: 1px solid #AFAFAF;
+        margin-bottom: 16px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        @include tablet {
+            height: 47px;
+            padding: 12px;
+            width: 440px;
+            margin-right: 16px;
+        }
+    }
+    &__button {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 220px;
+        height: 48px;
+        border: 1px solid $Brainflix-blue-light;
+        background-color: $Brainflix-blue-light;
+        color: $white;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+}
