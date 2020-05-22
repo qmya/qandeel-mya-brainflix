@@ -63,5 +63,8 @@
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
+        @include desktop {
+            width: 158px;
+        }
     }
 }

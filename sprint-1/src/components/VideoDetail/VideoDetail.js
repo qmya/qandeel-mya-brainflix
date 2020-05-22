@@ -25,16 +25,17 @@ class VideoDetail extends React.Component{
   
             <section>
             <HeroVideo VideoList={this.state.video}/>   
-            <span className="videodetail__container">
+            <div className="videodetail__container">
+              <div className="videodetail__wrap">
             <SubHeading HeroHeading={this.state.HeroHeading}/> 
             
             <Form/>
             <Comments commentList={this.state.commentList}/> 
-            
-            {/* <aside className="nextvideo__container"> */}
+            </div>
+           
             <VideoList NextVideo={this.state.NextVideo} /> 
-              {/* </aside> */}
-              </span>
+             
+              </div>
               </section> 
            
 
