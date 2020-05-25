@@ -3,8 +3,9 @@
     @include mobile-subheading;
     margin: 0;
     &__wrap {
-        padding-left: 16px;
-        padding-right: 16px;
+        border-bottom: 1px solid $silver;
+        margin-left: 16px;
+        margin-right: 16px;
         padding-bottom: 20px;
         box-sizing: border-box;
         @include tablet {
@@ -35,7 +36,6 @@
         padding-left: 24px;
     }
     &__commentwrap {
-        border-bottom: 1px solid $silver;
         display: flex;
         @include mobile-paragraph;
     }

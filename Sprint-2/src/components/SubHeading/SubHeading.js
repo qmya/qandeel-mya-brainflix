@@ -8,6 +8,9 @@ import heart from '../../Assets/Icons/SVG/Icon-likes.svg';
 
 const SubHeading =(props) =>{
     console.log (props);
+    const format = (date) =>  {
+      return new Date(date).toLocaleDateString()
+    }
     // const HeroHeading = props.HeroHeading.map((HeroHeading) => {       
     return(
        <div className="subheading" key={props.HeroHeading.id}>
@@ -16,7 +19,7 @@ const SubHeading =(props) =>{
              <div className="subheading__redcowicons">
                <div className="subheading__redcowdate">
               <h2 className="subheading__redcow">{props.HeroHeading.channel}</h2>
-              <p className="subheading__date">{props.HeroHeading.date}</p>
+              <p className="subheading__date">{format(props.HeroHeading.timestamp)}</p>
               
            </div>
            </div> 

@@ -15,6 +15,7 @@ const HeroVideo =(props)=>{
         <div className ="herovideo__wrap">
         <img className ="herovideo__playicon" src ={PlayIcon} alt="main video of the site"/> 
         </div>
+       
         <div className ="herovideo__line"><div className ="herovideo__insideline"></div></div>
         <div className ="herovideo__righticons">
         <img className ="herovideo__fullscreen" src ={FullScreen} alt="main video of the site"/> 

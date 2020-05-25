@@ -13,13 +13,9 @@ class App extends React.Component {
           
         <BrowserRouter>
         <Switch>
-
-
        <Route path ="/" exact component = {HomePage}/>
-       <Route path="/HomePage" component={HomePage} />
        <Route path="/UploadPage" component={UploadPage} />
-       <Route path="/videos/:id" component = {HomePage} />
-      <Route path="/videos" component = {HomePage} /> 
+       <Route path="/:id" component = {HomePage} />
         </Switch>
             </BrowserRouter>
             
