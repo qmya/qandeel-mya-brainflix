@@ -17,6 +17,7 @@ const SubHeading =(props) =>{
                <div className="subheading__redcowdate">
               <h2 className="subheading__redcow">{props.HeroHeading.channel}</h2>
               <p className="subheading__date">{props.HeroHeading.date}</p>
+              
            </div>
            </div> 
         

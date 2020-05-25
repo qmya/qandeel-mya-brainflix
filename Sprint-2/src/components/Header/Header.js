@@ -1,4 +1,5 @@
 import React from 'react';
+// import {Link} from 'react-router-dom'
 import "./Header.scss";
 import Logo from '../../Assets/Logo/Logo-brainflix.svg';
 import Iconsplus from '../../Assets/Icons/SVG/Icon-upload.svg';
@@ -11,7 +12,10 @@ const Header = (props) => {
     
       <header className = "header">
         <span className="header__wrapper">
-        <img className ="header__logo" src ={Logo} alt="logo of the site"/>
+          {/* <Link to="/"> */}
+          <img className ="header__logo" src ={Logo} alt="logo of the site"/>
+          {/* </Link> */}
+        
         </span>
        
            <nav className="header__navcontainer">

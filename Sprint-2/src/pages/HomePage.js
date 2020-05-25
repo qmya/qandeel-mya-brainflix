@@ -1,54 +1,67 @@
 import React, {Component} from 'react';
-import './VideoDetail.scss'
+// import './VideoDetail.scss'
 import axios from 'axios';
 // import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import HeroVideo from '../HeroVideo/HeroVideo';
-import SubHeading from '../SubHeading/SubHeading';
-import Form from '../Form/Form';
-import VideoList from '../VideoList/VideoList';
-// import HeroHeading from '../HeroHeading/HeroHeading';
-import Comments from '../Comments/Comments';
-// import NextVideo from '../../NextVideo/NextVideo';
-import commentList from '../VideoComment/VideoComment';
+import Header from '../components/Header/Header';
+import HeroVideo from '../components/HeroVideo/HeroVideo';
+import SubHeading from '../components/SubHeading/SubHeading';
+import Form from '../components/Form/Form';
+import VideoList from '../components/VideoList/VideoList';
+// import HeroHeading from '../components/HeroHeading/HeroHeading';
+import Comments from '../components/Comments/Comments';
+// import NextVideo from '../../components/NextVideo/NextVideo';
+// import commentList from '../components/VideoComment/VideoComment';
 
 //The url for the API 
 const URL = 'https://project-2-api.herokuapp.com/';
-
-
 //got API key and Store the key in a global variable in your website.
 const KEY = '?api_key=2745b39a-d620-4945-ad03-64ebf22b4100';
 
+//Number of milliseconds into day time
+const Datetime = (date) => {
+  return new Date(date).toLocaleDateString()
+}
+
+
+
 // const id: 1af0jruup5gu;
-const currentVideo = id => `${URL}videos/${id}${KEY}`
-console.log(currentVideo);
+// const currentVideo = id => `URL+videos/id+KEY}`
+// console.log(currentVideo);
 
 // const Videos =["BMX Rampage: 2018 Highlights","Become A Travel Pro In One Easy Lesson", "Les Houches The Hidden Gem Of The Chamonix","Travel Health Useful Medical Information For","Cheap Airline Tickets Great Ways To Save","Take A Romantic Break In A Boutique Hotel","Choose the Perfect Accommodations","Cruising Destination Ideas","Train Travel On Track For Safety" ]
 
-class VideoDetail extends Component {
+class HomePage extends Component {
 
 
     state ={
       HeroHeading :{},
-      // commentList: commentList,
+       videoId:'',
+      VideoLikesViews: [],
+      commentList:[],
+    
       NextVideo: []
     }
 
     componentDidMount(){
-      axios.get(URL+'videos'+KEY)
+      axios.get(URL+'videos/'+KEY)
       .then(results => {
         console.log(results) 
-        this.setState({videoId:results.data[0].id})
-        this.setState({NextVideo:results.data})
+        this.setState({videoId:results.data[0].id});
+        this.setState({NextVideo:results.data});
+        
+       
       })
       .then (() => {
         axios 
-        .get(currentVideo (this.state.videoId))
+        .get(URL + 'videos/' + (this.state.videoId) + KEY)
         .then(results => {
           console.log(results.data)
+          console.log(results.data.image)
           this.setState({
-           
-          
-            HeroHeading:results.data.image,
+           HeroHeading:results.data.image,
+           HeroHeading:results.data.title,
+           HeroHeading:results.data.description,
+           commentList:results.data.comments,
             
           })
          console.log(results.data.image)
@@ -59,7 +72,12 @@ class VideoDetail extends Component {
     render() {
       return (
         <>
-        <HeroVideo HeroHeading={this.state.HeroHeading}/>    
+        <Header/>
+        <HeroVideo HeroHeading={this.state.HeroHeading}/> 
+        <SubHeading HeroHeading={this.state.HeroHeading}/> 
+        <Form/>  
+        
+        <Comments commentList={this.state.commentList}/> 
           <VideoList NextVideo={this.state.NextVideo} /> 
         </>
       )
@@ -121,8 +139,8 @@ class VideoDetail extends Component {
 
                
           //  <HeroVideo HeroHeading={this.state.video}/>    
-  //           <div className="videodetail__container">
-  //             <div className="videodetail__wrap">
+  //           <div className="HomePage__container">
+  //             <div className="HomePage__wrap">
   //           <SubHeading HeroHeading={this.state.HeroHeading}/> 
             
   //           <Form/>
@@ -139,4 +157,4 @@ class VideoDetail extends Component {
   //   }
   }
   
-  export default VideoDetail;
+  export default HomePage;

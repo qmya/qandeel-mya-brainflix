@@ -5,14 +5,10 @@ import FullScreen from '../../Assets/Icons/SVG/Icon-fullscreen.svg';
 import FullVolume from '../../Assets/Icons/SVG/Icon-volume.svg';
 
 import "./HeroVideo.scss";
-
-const HeroVideo =(props) =>{
-
-    console.log(props.HeroHeading);
-    return(
+const HeroVideo =(props)=>{
+      return (
         
-        
-        <div className ="herovideo">
+        <div className ="herovideo" >
          <img  className ="herovideo" src ={props.HeroHeading.image} alt="hero image"/>
          {/* <img className ="herovideo__video" src ={MainVideo} alt="main video of the site"/> */}
         <div className="herovideo__controller"> 

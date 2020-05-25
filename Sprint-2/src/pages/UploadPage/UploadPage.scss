@@ -1,0 +1,73 @@
+@import '../../styles/partials/mixin';
+.upload {
+    padding-left: 16px;
+    &__title {
+        // padding-top: 24px;
+        // padding-bottom: 32px;
+        @include mobile-heading;
+    }
+    &__subtitle {
+        padding-top: 24px;
+        @include mobile-labels;
+    }
+    &__image {
+        width: 288px;
+        height: 153px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-bottom: 32px;
+    }
+    &__formwrap {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__add {
+        height: 45px;
+        width: 288px;
+        border-color: $silver;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+    &__description {
+        height: 143px;
+        width: 288px;
+        border-color: $silver;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__publish {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 288px;
+        height: 48px;
+        border: 1px solid $Brainflix-blue-light;
+        background-color: $Brainflix-blue-light;
+        color: $white;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+    &__cancel {
+        @include mobile-labels;
+        color: $Brainflix-blue-light;
+    }
+}
