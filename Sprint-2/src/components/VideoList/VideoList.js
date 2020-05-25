@@ -6,8 +6,8 @@ const VideoList = props => {
   console.log(props.NextVideo);  
   const NextVideo = props.NextVideo.map((NextVideo) => {   
   return (
-    <Link to={'/'+ NextVideo.id}>
-  <section className="nextvideo" key={NextVideo.id}>
+    <Link to={'/'+ NextVideo.id} key={NextVideo.id} className="nextvideo__link">
+  <section className="nextvideo" >
     <span className="nextvideo__wrapper">
       <img className="nextvideo__image" src={NextVideo.image} alt="next video images"/>
       <span className="nextvideo__heading">

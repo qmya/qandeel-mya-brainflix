@@ -1,4 +1,9 @@
     @import '../../styles/partials/mixin';
+    @import '../../styles/partials/fonts';
+    * {
+        font-family: 'AvenirRegular';
+    }
+    
     .subheading {
         padding-left: 16px;
         padding-right: 16px;

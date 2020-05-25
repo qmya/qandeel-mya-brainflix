@@ -16,10 +16,7 @@ const URL = 'https://project-2-api.herokuapp.com/';
 //got API key and Store the key in a global variable in your website.
 const KEY = '?api_key=2745b39a-d620-4945-ad03-64ebf22b4100';
 
-//Number of milliseconds into day time
-// const Datetime = (date) => {
-//   return new Date(date).toLocaleDateString()
-// }
+
 
 class HomePage extends Component {
 

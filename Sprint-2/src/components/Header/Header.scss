@@ -1,4 +1,5 @@
 @import '../../styles/partials/mixin';
+@import '../../styles/partials/fonts';
 .header {
     display: flex;
     flex-direction: column;
@@ -48,11 +49,12 @@
     &__search {
         background-image: url('../../Assets/Icons/SVG/Icon-search.svg');
         background-position: 15px;
+        font-family: "AvenirNextRegular";
         padding: 0px 15px 0px 40px;
         display: flex;
         align-items: center;
         background-repeat: no-repeat;
-        background-color: $mercury;
+        border: 1px solid $mercury;
         width: 288px;
         height: 48px;
         border-radius: 4px;

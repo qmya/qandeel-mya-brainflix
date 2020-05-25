@@ -1,4 +1,9 @@
 @import '../../styles/partials/mixin';
+@import '../../styles/partials/fonts';
+* {
+    font-family: 'AvenirNextRegular';
+}
+
 .upload {
     padding-left: 16px;
     &__title {
@@ -46,13 +51,15 @@
     &__desktop {
         display: flex;
         justify-content: center;
+        height: fit-content;
     }
     &__add {
         box-sizing: border-box;
         padding: 10px;
         height: 45px;
         width: 100%;
-        border-color: $silver;
+        border: 1px solid $mercury;
+        background-color: $alabaster;
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -64,7 +71,8 @@
         padding: 10px;
         height: 143px;
         width: 100%;
-        border-color: $silver;
+        border: 1px solid $mercury;
+        background-color: $alabaster;
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;

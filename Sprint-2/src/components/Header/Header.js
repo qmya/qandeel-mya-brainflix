@@ -12,7 +12,7 @@ const Header = (props) => {
     
       <header className = "header">
         <span className="header__wrapper">
-          <Link to="/">
+          <Link to="/" >
           <img className ="header__logo" src ={Logo} alt="logo of the site"/>
           </Link>
         
@@ -21,7 +21,7 @@ const Header = (props) => {
            <nav className="header__navcontainer">
            <form className ="header__formcontainer">
             <input id="searchicon"className ="header__searchicon header__search" type="text" placeholder="  Search" name="search"/>
-            <Link to="/UploadPage">
+            <Link to="/UploadPage" style={{ textDecoration: 'none' }}>
            <button className ="header__upload"type="submit"><img className ="header__iconplus" src ={Iconsplus} alt="logo add icon"/>UPLOAD</button>
            </Link>
            <img className ="header__thumbimage" src = {Thumbimage} alt="Nav bar thumb nail"/>

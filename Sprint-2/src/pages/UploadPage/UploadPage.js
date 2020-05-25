@@ -10,7 +10,7 @@ class UploadPage extends React.Component {
        <Header /> 
         <section className='upload'>
           <h1 className='upload__title'>Upload Video</h1>
-          <div className='grey-border'>
+          
             <section className='upload__desktop'>
               <div>
                 <h3 className="upload__subtitle">VIDEO THUMBNAIL</h3> 
@@ -25,7 +25,7 @@ class UploadPage extends React.Component {
                 </form>
               </div>  
             </section>
-          </div> 
+          
           <div className="upload__buttons">
             <button className="upload__publish">PUBLISH</button>
             <div className="upload__cancel">CANCEL</div>
