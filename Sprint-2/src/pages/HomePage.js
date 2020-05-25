@@ -72,6 +72,17 @@ class HomePage extends Component {
     }
 
   }
+  //Adding comment to the comment section
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   this.video(event.target.name.value);
+  //   this.video(event.target.date.value);
+  //   this.video(event.target.message.value);
+  //   event.target.reset();
+  //   this.setState({
+  //     loading: false,
+  //   });
+  // };
 
     render() {
       let filtered =this.state.NextVideo.filter(video =>{
@@ -85,7 +96,7 @@ class HomePage extends Component {
         <div className="HomePage__container">
      <div className="HomePage__wrap">
         <SubHeading HeroHeading={this.state.HeroHeading}/> 
-        <Form/>  
+        <Form handleSubmit={this.handleSubmit}/>  
         
         <Comments commentList={this.state.HeroHeading.comments}/> 
         </div>

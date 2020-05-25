@@ -11,10 +11,6 @@
         height: 88px;
         display: flex;
     }
-    // margin-left: 24px;
-    // margin-right: 24px;
-    // display: flex;
-    // flex-direction: row;
     &__wrapper {
         height: 48px;
         display: flex;
@@ -23,15 +19,10 @@
     }
     &__logo {
         height: 33px;
-        // display: flex;
-        // justify-content: center;
-        // align-items: baseline;
         @include tablet {
             margin: 0;
             height: 2rem;
             padding-left: 16px;
-            // height: 1.5rem;
-            // padding-right: 10.563rem;
         }
     }
     &__formcontainer {

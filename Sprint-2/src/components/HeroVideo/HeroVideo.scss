@@ -6,20 +6,42 @@
     width: 100%;
     position: relative;
     @include tablet {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
         min-height: 400px;
     }
     @include desktop {
-        // background-color: black;
-        // width: 944px;
         max-height: 540px;
+    }
+    &__desktop {
+        display: flex;
+        justify-content: center;
+        @include tablet {
+            width: 700px;
+        }
+        @include desktop {
+            width: 944px;
+        }
     }
     &__controller {
         display: flex;
         position: absolute;
         bottom: 8px;
-        margin-left: 8px;
+        justify-content: center;
         @include tablet {
-            margin-left: 24px;
+            // margin-left: 24px;
+        }
+        // @include desktop {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+    }
+    &__time {
+        @include tablet {
+            color: white;
+            margin-left: 16px;
         }
     }
     &__video {
