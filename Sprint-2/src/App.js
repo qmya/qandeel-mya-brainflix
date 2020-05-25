@@ -1,27 +1,27 @@
 import React from 'react';
 import HomePage from './pages/HomePage';
-// import UploadPage from './pages/UploadPage/UploadPage';
-// import Header from './components/Header/Header';
-// import VideoDetail from './components/VideoDetail/VideoDetail';
-// import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import UploadPage from './pages/UploadPage/UploadPage';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
+
 
 
 class App extends React.Component {
     render() {
       return (
         <div>
-          <HomePage/>
-          {/* <UploadPage/> */}
-        {/* <BrowserRouter>
+          
+        <BrowserRouter>
         <Switch>
 
-        <Route path='/' component={Header} />
-        <Route path='/VideoDetail' component={VideoDetail} /> */}
 
-            {/* <Header/>
-         <VideoDetail/> */}
-            {/* </Switch>
-            </BrowserRouter> */}
+       <Route path ="/" exact component = {HomePage}/>
+       <Route path="/HomePage" component={HomePage} />
+       <Route path="/UploadPage" component={UploadPage} />
+       <Route path="/videos/:id" component = {HomePage} />
+      <Route path="/videos" component = {HomePage} /> 
+        </Switch>
+            </BrowserRouter>
             
             </div>
         );

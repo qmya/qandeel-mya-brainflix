@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-// import './VideoDetail.scss'
+
 import axios from 'axios';
-// import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
 import Header from '../components/Header/Header';
 import HeroVideo from '../components/HeroVideo/HeroVideo';
 import SubHeading from '../components/SubHeading/SubHeading';

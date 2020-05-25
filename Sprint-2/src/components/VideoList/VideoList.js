@@ -1,6 +1,6 @@
 import React from 'react';
  import './VideoList.scss'
-
+ import { Link } from "react-router-dom";
  
 const VideoList = props => {   
   console.log(props.NextVideo);  
@@ -34,9 +34,3 @@ const VideoList = props => {
 export default VideoList;
 
 
-// return (
-//   <div className="next__video-main">
-//     <h4 className="next__video-main-heading">NEXT VIDEO</h4>
-//     {videoImage}
-//   </div>
-// );
