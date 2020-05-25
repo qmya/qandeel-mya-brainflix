@@ -36,7 +36,7 @@ class HomePage extends Component {
     state ={
       HeroHeading :{},
        videoId:'',
-      VideoLikesViews: [],
+      // VideoLikesViews: [],
       commentList:[],
     
       NextVideo: []
@@ -58,9 +58,9 @@ class HomePage extends Component {
           console.log(results.data)
           console.log(results.data.image)
           this.setState({
-           HeroHeading:results.data.image,
-           HeroHeading:results.data.title,
-           HeroHeading:results.data.description,
+           HeroHeading:results.data,
+          //  HeroHeading:results.data.title,
+          //  HeroHeading:results.data.description,
            commentList:results.data.comments,
             
           })
@@ -78,7 +78,8 @@ class HomePage extends Component {
         <Form/>  
         
         <Comments commentList={this.state.commentList}/> 
-          <VideoList NextVideo={this.state.NextVideo} /> 
+          <VideoList NextVideo={this.state.NextVideo}
+           /> 
         </>
       )
     }
