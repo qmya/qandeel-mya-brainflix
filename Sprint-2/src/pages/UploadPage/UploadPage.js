@@ -11,7 +11,7 @@ class UploadPage extends React.Component {
         <section className='upload'>
           <h1 className='upload__title'>Upload Video</h1>
           <div className='grey-border'>
-            <section className='upload-desktop'>
+            <section className='upload__desktop'>
               <div>
                 <h3 className="upload__subtitle">VIDEO THUMBNAIL</h3> 
                 <img src={upload} className="upload__image" alt=" " /> 
@@ -21,7 +21,7 @@ class UploadPage extends React.Component {
                   <div className="upload__subtitle">TITLE YOUR VIDEO</div> 
                     <input type="text" placeholder="Add a title to your video" className="upload__add"/>
                   <div className="upload__subtitle">ADD A VIDEO DESCRIPTION</div> 
-                    <textarea type="text" placeholder="Add a description to your video" className="upload__description"/>
+                    <textarea type="text" placeholder="Add a description to your video" className="upload__description"></textarea>
                 </form>
               </div>  
             </section>

@@ -8,10 +8,6 @@
         flex-direction: row;
         align-items: center;
         height: 88px;
-        // height: 5rem;
-        // padding-left: 1.5rem;
-        // padding-right: 1.5rem;
-        // padding-bottom: 1rem;
         display: flex;
     }
     // margin-left: 24px;
@@ -22,15 +18,15 @@
         height: 48px;
         display: flex;
         align-self: center;
+        padding-top: 5px;
     }
     &__logo {
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
+        height: 33px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: baseline;
         @include tablet {
             margin: 0;
-            padding-right: 2.563rem;
             height: 2rem;
             padding-left: 16px;
             // height: 1.5rem;
@@ -42,6 +38,12 @@
         flex-wrap: wrap;
         padding-left: 16px;
         padding-right: 16px;
+        @include tablet {
+            padding-left: 38px;
+        }
+        @include desktop {
+            padding-left: 464px;
+        }
     }
     &__search {
         background-image: url('../../Assets/Icons/SVG/Icon-search.svg');

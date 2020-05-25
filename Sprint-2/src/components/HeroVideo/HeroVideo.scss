@@ -6,7 +6,7 @@
     width: 100%;
     position: relative;
     @include tablet {
-        min-height: 25rem;
+        min-height: 400px;
     }
     @include desktop {
         // background-color: black;

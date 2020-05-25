@@ -2,13 +2,22 @@
 .upload {
     padding-left: 16px;
     &__title {
-        // padding-top: 24px;
-        // padding-bottom: 32px;
+        padding-top: 24px;
+        padding-bottom: 32px;
         @include mobile-heading;
+        border-bottom: 1px solid $silver;
+        width: 288px;
+        @include tablet {
+            @include tablet-headerone;
+            width: 720px;
+            padding-top: 48px;
+        }
     }
     &__subtitle {
-        padding-top: 24px;
         @include mobile-labels;
+        @include tablet {
+            @include tablet-labels;
+        }
     }
     &__image {
         width: 288px;
@@ -19,16 +28,30 @@
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
         margin-bottom: 32px;
+        @include tablet {
+            width: 344px;
+            height: 183px;
+        }
     }
     &__formwrap {
-        width: 320px;
+        width: 288px;
+        @include tablet {
+            width: 720px;
+            border-bottom: 1px solid $silver;
+        }
+        @include desktop {
+            margin-left: 24px;
+        }
+    }
+    &__desktop {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
     &__add {
+        box-sizing: border-box;
+        padding: 10px;
         height: 45px;
-        width: 288px;
+        width: 100%;
         border-color: $silver;
         border-radius: 4px;
         -webkit-border-radius: 4px;
@@ -37,19 +60,26 @@
         -o-border-radius: 4px;
     }
     &__description {
+        box-sizing: border-box;
+        padding: 10px;
         height: 143px;
-        width: 288px;
+        width: 100%;
         border-color: $silver;
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
+        margin-bottom: 32px;
     }
     &__buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        box-sizing: border-box;
+        @include tablet {
+            width: 720px;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 40px;
+        }
     }
     &__publish {
         margin-bottom: 24px;
@@ -65,9 +95,18 @@
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
+        @include tablet {
+            width: 160px;
+            margin-left: 48px;
+        }
     }
     &__cancel {
+        display: flex;
+        justify-content: center;
         @include mobile-labels;
         color: $Brainflix-blue-light;
+        @include tablet {
+            margin-top: 15px;
+        }
     }
 }

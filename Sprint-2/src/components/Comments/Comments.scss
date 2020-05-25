@@ -3,11 +3,14 @@
     @include mobile-subheading;
     margin: 0;
     &__wrap {
-        border-bottom: 1px solid black;
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 20px;
         box-sizing: border-box;
+        @include tablet {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
     }
     &__image {
         @include thumb-image;
@@ -32,8 +35,12 @@
         padding-left: 24px;
     }
     &__commentwrap {
-        margin-left: 65px;
+        border-bottom: 1px solid $silver;
         display: flex;
+        @include mobile-paragraph;
+    }
+    &__comment {
+        margin-left: 65px;
         @include mobile-paragraph;
     }
 }
