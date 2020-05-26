@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import './HomePage.scss';
 import axios from 'axios';
-import Header from '../components/Header/Header';
-import HeroVideo from '../components/HeroVideo/HeroVideo';
-import SubHeading from '../components/SubHeading/SubHeading';
-import Form from '../components/Form/Form';
-import VideoList from '../components/VideoList/VideoList';
-// import HeroHeading from '../components/HeroHeading/HeroHeading';
-import Comments from '../components/Comments/Comments';
-// import NextVideo from '../../components/NextVideo/NextVideo';
-// import commentList from '../components/VideoComment/VideoComment';
+import Header from '../../components/Header/Header';
+import HeroVideo from '../../components/HeroVideo/HeroVideo';
+import SubHeading from '../../components/SubHeading/SubHeading';
+import Form from '../../components/Form/Form';
+import VideoList from '../../components/VideoList/VideoList';
+import Comments from '../../components/Comments/Comments';
+
 
 //The url for the API 
 const URL = 'https://project-2-api.herokuapp.com/';
@@ -29,7 +27,7 @@ class HomePage extends Component {
     componentDidMount(){
       axios.get(URL+'videos/'+KEY)
       .then(results => {
-        console.log(results) 
+        
         this.setState({NextVideo:results.data});
         
        
@@ -42,13 +40,12 @@ class HomePage extends Component {
         axios 
         .get(URL + 'videos/' +videoId + KEY)
         .then(results => {
-          console.log(results.data)
-          console.log(results.data.image)
+         
           this.setState({
            HeroHeading:results.data,
             
           })
-         console.log(results.data.image)
+         
         })
       })
     }
@@ -71,23 +68,7 @@ class HomePage extends Component {
     }
 
   }
-  //Adding comment to the comment section
-  // handleSubmit = (event) => {
-   
-  //   event.preventDefault();
-  // let video = { 
-  //   name: event.target.name.value, 
-  //   comment: event.target.comment.value
-  // }
-  //   event.target.reset();
-  // axios.post(URL + "/videos" + HeroHeading.id + "/comments", video)
-  // .then(results =>{
-  //   this.setState({
-  //     HeroHeading:results.data,
-  //       });
-  // })
-    
-  // };
+ 
 
     render() {
       let filtered =this.state.NextVideo.filter(video =>{
@@ -101,7 +82,7 @@ class HomePage extends Component {
         <div className="HomePage__container">
      <div className="HomePage__wrap">
         <SubHeading HeroHeading={this.state.HeroHeading}/> 
-        <Form handleSubmit={this.handleSubmit}/>  
+        <Form/>  
         
         <Comments commentList={this.state.HeroHeading.comments}/> 
         </div>

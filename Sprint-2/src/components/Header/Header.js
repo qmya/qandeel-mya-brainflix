@@ -7,10 +7,8 @@ import Thumbimage from '../../Assets/Images/Mohan-muruge.jpg';
 
 
 const Header = (props) => {
-  console.log('PROPS', props);
-    return ( 
-    
-      <header className = "header">
+ return ( 
+     <header className = "header">
         <span className="header__wrapper">
           <Link to="/" >
           <img className ="header__logo" src ={Logo} alt="logo of the site"/>

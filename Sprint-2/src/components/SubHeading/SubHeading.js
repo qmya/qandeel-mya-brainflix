@@ -7,11 +7,10 @@ import heart from '../../Assets/Icons/SVG/Icon-likes.svg';
 
 
 const SubHeading =(props) =>{
-    console.log (props);
+    //this will convert the date milli seconds to date
     const format = (date) =>  {
       return new Date(date).toLocaleDateString()
-    }
-    // const HeroHeading = props.HeroHeading.map((HeroHeading) => {       
+    }     
     return(
        <div className="subheading" key={props.HeroHeading.id}>
         <h1 className="subheading__bmx" >{props.HeroHeading.title}</h1>

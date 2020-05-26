@@ -3,7 +3,7 @@ import './Comments.scss';
 import userAvatar from '../../Assets/Images/blank.jpg';
 
 const Comments = props => {   
-  console.log(props.commentList);  
+   
 
 const format = (date) =>  {
   return new Date(date).toLocaleDateString()

@@ -1,6 +1,5 @@
 @import '../../styles/partials/mixin';
 .herovideo {
-    // background: url('../../Assets/Images/video-list-0.jpg');
     background-size: cover;
     min-height: 11.4375rem;
     width: 100%;
@@ -30,13 +29,7 @@
         position: absolute;
         bottom: 8px;
         justify-content: center;
-        @include tablet {
-            // margin-left: 24px;
-        }
-        // @include desktop {
-        //     display: flex;
-        //     justify-content: center;
-        // }
+        @include tablet {}
     }
     &__time {
         display: none;

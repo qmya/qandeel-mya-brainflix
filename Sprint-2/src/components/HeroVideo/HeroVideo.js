@@ -1,10 +1,9 @@
 import React from 'react';
-// import MainVideo from '../../Assets/Images/video-list-0.jpg';
 import PlayIcon from '../../Assets/Icons/SVG/Icon-play.svg';
 import FullScreen from '../../Assets/Icons/SVG/Icon-fullscreen.svg';
 import FullVolume from '../../Assets/Icons/SVG/Icon-volume.svg';
-
 import "./HeroVideo.scss";
+
 const HeroVideo =(props)=>{
       return (
         

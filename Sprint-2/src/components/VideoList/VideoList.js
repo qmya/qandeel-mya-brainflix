@@ -3,7 +3,7 @@ import React from 'react';
  import { Link } from "react-router-dom";
  
 const VideoList = props => {   
-  console.log(props.NextVideo);  
+
   const NextVideo = props.NextVideo.map((NextVideo) => {   
   return (
     <Link to={'/'+ NextVideo.id} key={NextVideo.id} className="nextvideo__link">
