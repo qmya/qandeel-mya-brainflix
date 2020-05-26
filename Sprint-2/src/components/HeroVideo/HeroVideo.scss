@@ -39,7 +39,9 @@
         // }
     }
     &__time {
+        display: none;
         @include tablet {
+            display: unset;
             color: white;
             margin-left: 16px;
         }

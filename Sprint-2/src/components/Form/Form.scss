@@ -1,5 +1,9 @@
 @import '../../styles/partials/mixin';
 .comments {
+    @include tablet {
+        padding: 0;
+        margin: 0;
+    }
     &__header {
         @include mobile-subheading;
         padding-bottom: 32px;

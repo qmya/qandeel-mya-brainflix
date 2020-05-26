@@ -6,11 +6,11 @@
         border-bottom: 1px solid $silver;
         margin-left: 16px;
         margin-right: 16px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         box-sizing: border-box;
         @include tablet {
-            padding-left: 24px;
-            padding-right: 24px;
+            margin-left: 24px;
+            margin-right: 24px;
         }
     }
     &__image {
@@ -41,6 +41,7 @@
     }
     &__comment {
         margin-left: 65px;
+        margin-bottom: 20px;
         @include mobile-paragraph;
     }
 }

@@ -30,7 +30,6 @@ class HomePage extends Component {
       axios.get(URL+'videos/'+KEY)
       .then(results => {
         console.log(results) 
-        // this.setState({videoId:results.data[0].id});
         this.setState({NextVideo:results.data});
         
        
@@ -74,14 +73,20 @@ class HomePage extends Component {
   }
   //Adding comment to the comment section
   // handleSubmit = (event) => {
+   
   //   event.preventDefault();
-  //   this.video(event.target.name.value);
-  //   this.video(event.target.date.value);
-  //   this.video(event.target.message.value);
+  // let video = { 
+  //   name: event.target.name.value, 
+  //   comment: event.target.comment.value
+  // }
   //   event.target.reset();
+  // axios.post(URL + "/videos" + HeroHeading.id + "/comments", video)
+  // .then(results =>{
   //   this.setState({
-  //     loading: false,
-  //   });
+  //     HeroHeading:results.data,
+  //       });
+  // })
+    
   // };
 
     render() {

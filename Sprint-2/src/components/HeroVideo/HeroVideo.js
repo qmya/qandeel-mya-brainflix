@@ -11,14 +11,14 @@ const HeroVideo =(props)=>{
         <div className ="herovideo" >
           <div className="herovideo__desktop">
          <img  className ="herovideo" src ={props.HeroHeading.image} alt="hero image"/>
-         {/* <img className ="herovideo__video" src ={MainVideo} alt="main video of the site"/> */}
+
         <div className="herovideo__controller"> 
         <div className ="herovideo__wrap">
         <img className ="herovideo__playicon" src ={PlayIcon} alt="main video of the site"/> 
         </div>
        
         <div className ="herovideo__line"><div className ="herovideo__insideline"></div>
-        <div className="herovideo__time">0:00/0:42</div>
+        <div className="herovideo__time">{props.HeroHeading.duration}</div>
         </div>
         <div className ="herovideo__righticons">
         <img className ="herovideo__fullscreen" src ={FullScreen} alt="main video of the site"/> 
