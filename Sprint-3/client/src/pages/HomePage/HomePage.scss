@@ -1,0 +1,12 @@
+@import '../../styles/partials/mixin';
+.HomePage__container {
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
+    &__wrap {
+        @include desktop {
+            width: 712px;
+        }
+    }
+}

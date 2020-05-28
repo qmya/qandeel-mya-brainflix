@@ -1,0 +1,147 @@
+@import '../../styles/partials/mixin';
+@import '../../styles/partials/fonts';
+* {
+    font-family: 'AvenirNextRegular';
+}
+
+.upload {
+    padding-left: 16px;
+    padding-right: 16px;
+    @include tablet {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    @include desktop {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    &__title {
+        padding-top: 24px;
+        padding-bottom: 32px;
+        @include mobile-heading;
+        border-bottom: 1px solid $mercury;
+        width: 288px;
+        @include tablet {
+            @include tablet-headerone;
+            width: 720px;
+            padding-top: 48px;
+        }
+        @include desktop {
+            border-bottom: none;
+        }
+    }
+    &__subtitle {
+        @include mobile-labels;
+        @include tablet {
+            @include tablet-labels;
+        }
+    }
+    &__image {
+        width: 288px;
+        height: 153px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-bottom: 32px;
+        @include tablet {
+            width: 344px;
+            height: 183px;
+        }
+    }
+    &__formwrap {
+        width: 288px;
+        @include tablet {
+            width: 720px;
+            border-bottom: 1px solid $mercury;
+            @include desktop {
+                border-bottom: none;
+            }
+        }
+        @include desktop {
+            margin-left: 24px;
+            padding-top: 25px;
+        }
+    }
+    &__desktop {
+        @include desktop {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid $mercury;
+            border-bottom: 1px solid $mercury;
+        }
+    }
+    &__add {
+        box-sizing: border-box;
+        padding: 10px;
+        height: 45px;
+        width: 100%;
+        border: 1px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-bottom: 24px;
+    }
+    &__description {
+        box-sizing: border-box;
+        padding: 10px;
+        height: 143px;
+        width: 100%;
+        border: 1px solid $mercury;
+        background-color: $alabaster;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        margin-bottom: 32px;
+        @include desktop {
+            height: 90px;
+        }
+    }
+    &__buttons {
+        box-sizing: border-box;
+        @include tablet {
+            width: 720px;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 40px;
+        }
+        @include desktop {
+            justify-content: end;
+            width: unset;
+        }
+    }
+    &__publish {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 24px;
+        width: 288px;
+        height: 48px;
+        border: 1px solid $Brainflix-blue-light;
+        background-color: $Brainflix-blue-light;
+        color: $white;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        @include tablet {
+            width: 160px;
+            margin-left: 48px;
+        }
+    }
+    &__cancel {
+        display: flex;
+        justify-content: center;
+        @include mobile-labels;
+        color: $Brainflix-blue-light;
+        @include tablet {
+            margin-top: 15px;
+        }
+    }
+}

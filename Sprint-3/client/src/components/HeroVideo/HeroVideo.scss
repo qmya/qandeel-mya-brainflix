@@ -1,0 +1,82 @@
+@import '../../styles/partials/mixin';
+.herovideo {
+    background-size: cover;
+    min-height: 11.4375rem;
+    width: 100%;
+    position: relative;
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+        min-height: 400px;
+    }
+    @include desktop {
+        max-height: 540px;
+    }
+    &__desktop {
+        display: flex;
+        justify-content: center;
+        @include tablet {
+            width: 700px;
+        }
+        @include desktop {
+            width: 944px;
+        }
+    }
+    &__controller {
+        display: flex;
+        position: absolute;
+        bottom: 8px;
+        justify-content: center;
+        @include tablet {}
+    }
+    &__time {
+        display: none;
+        @include tablet {
+            display: unset;
+            color: white;
+            margin-left: 16px;
+        }
+    }
+    &__video {
+        height: 183px;
+    }
+    &__wrap {
+        @include video-controller;
+    }
+    &__playicon {
+        width: 16px;
+    }
+    &__line {
+        width: 100px;
+        @include video-controller;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        @include tablet {
+            width: 519px;
+        }
+        @include desktop {
+            width: 751px;
+        }
+    }
+    &__insideline {
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    &__righticons {
+        margin-left: 8px;
+        display: flex;
+        @include video-controller;
+    }
+    &__fullscreen {
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,47 @@
+@import '../../styles/partials/mixin';
+.comment {
+    @include mobile-subheading;
+    margin: 0;
+    &__wrap {
+        border-bottom: 1px solid $silver;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        @include tablet {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
+    &__image {
+        @include thumb-image;
+        margin-top: 15px;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    &__namedate {
+        display: flex;
+        align-items: center;
+    }
+    &__name {
+        padding-right: 16px;
+        @include mobile-subheading;
+    }
+    &__date {
+        @include mobile-lists-contact-info;
+        color: $silver;
+        padding-left: 24px;
+    }
+    &__commentwrap {
+        display: flex;
+        @include mobile-paragraph;
+    }
+    &__comment {
+        margin-left: 65px;
+        margin-bottom: 20px;
+        @include mobile-paragraph;
+    }
+}
