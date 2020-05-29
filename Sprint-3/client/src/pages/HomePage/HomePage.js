@@ -10,9 +10,10 @@ import Comments from '../../components/Comments/Comments';
 
 
 //The url for the API 
-const URL = 'https://project-2-api.herokuapp.com/';
+const URL = process.env.REACT_APP_API_URL;
+// const URL = 'https://project-2-api.herokuapp.com/';
 //got API key and Store the key in a global variable in your website.
-const KEY = '?api_key=2745b39a-d620-4945-ad03-64ebf22b4100';
+// const KEY = '?api_key=2745b39a-d620-4945-ad03-64ebf22b4100';
 
 
 
