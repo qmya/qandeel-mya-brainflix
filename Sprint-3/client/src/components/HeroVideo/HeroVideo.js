@@ -5,6 +5,7 @@ import FullVolume from '../../Assets/Icons/SVG/Icon-volume.svg';
 import "./HeroVideo.scss";
 
 const HeroVideo =(props)=>{
+  console.log("HerooVideo",props);
       return (
         
         <div className ="herovideo" >

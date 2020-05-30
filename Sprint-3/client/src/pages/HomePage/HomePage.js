@@ -12,7 +12,7 @@ import Comments from '../../components/Comments/Comments';
 //The url for the API 
 const URL = process.env.REACT_APP_API_URL;
 // const URL = 'https://project-2-api.herokuapp.com/';
-//got API key and Store the key in a global variable in your website.
+// got API key and Store the key in a global variable in your website.
 // const KEY = '?api_key=2745b39a-d620-4945-ad03-64ebf22b4100';
 
 
@@ -26,7 +26,9 @@ class HomePage extends Component {
     }
 
     componentDidMount(){
-      axios.get(URL+'videos/'+KEY)
+      // axios.get(URL+'videos/'+KEY)
+      axios
+        .get(URL + '/videos')
       .then(results => {
         
         this.setState({NextVideo:results.data});
@@ -38,9 +40,11 @@ class HomePage extends Component {
         if(this.props.match.params.id){
           videoId = this.props.match.params.id;
         }
+       
+        // .get(URL + 'videos/' +videoId + KEY)
         axios 
-        .get(URL + 'videos/' +videoId + KEY)
-        .then(results => {
+          .get(`${URL}/videos/${videoId}`)
+         .then(results => {
          
           this.setState({
            HeroHeading:results.data,
@@ -58,7 +62,7 @@ class HomePage extends Component {
         if(this.props.match.params.id){
           videoId = this.props.match.params.id;
         }
-        axios.get(URL + 'videos/'+ videoId +KEY)
+        axios.get(URL + '/videos/'+ videoId)
        .then(results =>{
          this.setState({
            HeroHeading:results.data,
@@ -81,7 +85,7 @@ class HomePage extends Component {
         
         <HeroVideo HeroHeading={this.state.HeroHeading}/> 
         <div className="HomePage__container">
-     <div className="HomePage__wrap">
+        <div className="HomePage__wrap">
         <SubHeading HeroHeading={this.state.HeroHeading}/> 
         <Form/>  
         
