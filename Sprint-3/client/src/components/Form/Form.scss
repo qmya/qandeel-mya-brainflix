@@ -16,8 +16,10 @@
         display: flex;
     }
     &__tablet {
+        display: flex;
+        flex-direction: column;
         @include tablet {
-            display: flex;
+            flex-direction: row;
         }
     }
     &__thumbnail {

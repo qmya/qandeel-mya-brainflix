@@ -1,7 +1,7 @@
 import React from 'react';
 import './UploadPage.scss';
 import upload from '../../Assets/Images/Upload-video-preview.jpg';
-import Header from '../../components/Header/Header';
+
 import axios from 'axios';
 const URL = process.env.REACT_APP_API_URL;
 class UploadPage extends React.Component {
@@ -19,7 +19,7 @@ class UploadPage extends React.Component {
       ).then(results => {
         console.log(results)
       })
-      // event.target.reset()
+      event.target.reset()
       }
 
 
@@ -27,7 +27,7 @@ class UploadPage extends React.Component {
   render () {
     return (
       <div>
-       <Header /> 
+     
         <section className='upload'>
           <h1 className='upload__title'>Upload Video</h1>
           

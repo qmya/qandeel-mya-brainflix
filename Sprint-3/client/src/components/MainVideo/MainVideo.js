@@ -2,15 +2,15 @@ import React from 'react';
 import PlayIcon from '../../Assets/Icons/SVG/Icon-play.svg';
 import FullScreen from '../../Assets/Icons/SVG/Icon-fullscreen.svg';
 import FullVolume from '../../Assets/Icons/SVG/Icon-volume.svg';
-import "./HeroVideo.scss";
+import "./MainVideo.scss";
 
-const HeroVideo =(props)=>{
-  console.log("HerooVideo",props);
+const MainVideo =(props)=>{
+  
       return (
         
         <div className ="herovideo" >
           <div className="herovideo__desktop">
-         <img  className ="herovideo" src ={props.HeroHeading.image} alt="hero image"/>
+         <img  className ="herovideo" src ={props.HeroHeading.image} alt="main item of the page"/>
 
         <div className="herovideo__controller"> 
         <div className ="herovideo__wrap">
@@ -32,4 +32,4 @@ const HeroVideo =(props)=>{
 }
 
 
-export default HeroVideo;
+export default MainVideo;

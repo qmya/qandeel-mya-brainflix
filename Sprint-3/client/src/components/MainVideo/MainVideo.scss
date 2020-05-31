@@ -3,7 +3,6 @@
     background-size: cover;
     min-height: 11.4375rem;
     width: 100%;
-    position: relative;
     @include tablet {
         display: flex;
         justify-content: center;
@@ -17,6 +16,7 @@
     &__desktop {
         display: flex;
         justify-content: center;
+        position: relative;
         @include tablet {
             width: 700px;
         }
@@ -25,11 +25,17 @@
         }
     }
     &__controller {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
         display: flex;
         position: absolute;
         bottom: 8px;
         justify-content: center;
-        @include tablet {}
+        @include tablet {
+            // width: 668px;
+        }
     }
     &__time {
         display: none;
@@ -49,16 +55,16 @@
         width: 16px;
     }
     &__line {
-        width: 100px;
+        width: 100%;
         @include video-controller;
         margin-left: 8px;
         display: flex;
         align-items: center;
         @include tablet {
-            width: 519px;
+            // width: 519px;
         }
         @include desktop {
-            width: 751px;
+            // width: 751px;
         }
     }
     &__insideline {

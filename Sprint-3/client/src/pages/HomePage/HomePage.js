@@ -1,19 +1,16 @@
 import React, {Component} from 'react';
 import './HomePage.scss';
 import axios from 'axios';
-import Header from '../../components/Header/Header';
-import HeroVideo from '../../components/HeroVideo/HeroVideo';
+import MainVideo from '../../components/MainVideo/MainVideo';
 import SubHeading from '../../components/SubHeading/SubHeading';
 import Form from '../../components/Form/Form';
 import VideoList from '../../components/VideoList/VideoList';
 import Comments from '../../components/Comments/Comments';
 
 
-//The url for the API 
+
 const URL = process.env.REACT_APP_API_URL;
-// const URL = 'https://project-2-api.herokuapp.com/';
-// got API key and Store the key in a global variable in your website.
-// const KEY = '?api_key=2745b39a-d620-4945-ad03-64ebf22b4100';
+
 
 
 
@@ -26,7 +23,7 @@ class HomePage extends Component {
     }
 
     componentDidMount(){
-      // axios.get(URL+'videos/'+KEY)
+    
       axios
         .get(URL + '/videos')
       .then(results => {
@@ -41,7 +38,7 @@ class HomePage extends Component {
           videoId = this.props.match.params.id;
         }
        
-        // .get(URL + 'videos/' +videoId + KEY)
+       
         axios 
           .get(`${URL}/videos/${videoId}`)
          .then(results => {
@@ -81,9 +78,9 @@ class HomePage extends Component {
       })
       return (
         <>
-        <Header/>
         
-        <HeroVideo HeroHeading={this.state.HeroHeading}/> 
+        
+        <MainVideo HeroHeading={this.state.HeroHeading}/> 
         <div className="HomePage__container">
         <div className="HomePage__wrap">
         <SubHeading HeroHeading={this.state.HeroHeading}/> 

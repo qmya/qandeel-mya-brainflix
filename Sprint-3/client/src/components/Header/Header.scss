@@ -1,101 +1,127 @@
-@import '../../styles/partials/mixin';
-@import '../../styles/partials/fonts';
-.header {
-    display: flex;
-    flex-direction: column;
-    height: 10.53rem;
-    @include tablet {
-        padding-top: 10px;
-        flex-direction: row;
-        align-items: center;
-        height: 88px;
-        display: flex;
+    @import '../../styles/partials/mixin';
+    @import '../../styles/partials/fonts';
+    * {
+        padding: 0;
+        margin: 0;
     }
-    &__wrapper {
-        height: 48px;
+    
+    .header {
+        width: 100%;
         display: flex;
-        align-self: center;
-        padding-top: 5px;
-    }
-    &__logo {
-        height: 33px;
+        flex-direction: column;
+        height: 10.53rem;
         @include tablet {
-            margin: 0;
-            height: 2rem;
             padding-left: 16px;
-        }
-    }
-    &__formcontainer {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 16px;
-        padding-right: 16px;
-        @include tablet {
-            padding-left: 38px;
+            // padding-top: 10px;
+            flex-direction: row;
+            align-items: center;
+            height: 88px;
+            display: flex;
         }
         @include desktop {
-            padding-left: 464px;
+            padding: 0;
+            margin: 0 60px;
+        }
+        &__wrapper {
+            // height: 48px;
+            display: flex;
+            align-self: center;
+            // padding-top: 5px;
+            height: 33px;
+            @include tablet {
+                margin: 0;
+                margin-right: 169px;
+                height: 2rem;
+                // padding-left: 16px;
+            }
+            @include desktop {
+                margin-right: 509px;
+            }
+            // &__logo {
+            //     height: 33px;
+            //     @include tablet {
+            //         margin: 0;
+            //         margin-right: 169px;
+            //         height: 2rem;
+            //         padding-left: 16px;
+            //     }
+        }
+        &__formcontainer {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            box-sizing: border-box;
+            padding-left: 16px;
+            padding-right: 16px;
+            @include tablet {
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 0;
+                // padding-left: 38px;
+            }
+        }
+        &__search {
+            box-sizing: border-box;
+            background-image: url('../../Assets/Icons/SVG/Icon-search.svg');
+            background-position: 15px;
+            font-family: "AvenirNextRegular";
+            padding: 0px 15px 0px 40px;
+            display: flex;
+            align-items: center;
+            background-repeat: no-repeat;
+            border: 1px solid $mercury;
+            width: 100%;
+            height: 48px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            @include tablet {
+                margin-right: 1.5rem;
+                padding-right: 3.3rem;
+                width: 252px;
+                height: 55px;
+            }
+        }
+        &__iconplus {
+            padding-right: 10px;
+        }
+        &__upload {
+            width: 224px;
+            height: 48px;
+            margin-top: 8px;
+            background-color: $Brainflix-blue-light;
+            color: $white;
+            border: 1px solid $Brainflix-blue-light;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include tablet {
+                margin: 0;
+                height: 55px;
+                width: 103px;
+                // margin-left: 24px;
+                @include tablet-paragraph;
+            }
+        }
+        &__thumbimage {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-left: 16px;
+            margin-top: 8px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
         }
     }
-    &__search {
-        background-image: url('../../Assets/Icons/SVG/Icon-search.svg');
-        background-position: 15px;
-        font-family: "AvenirNextRegular";
-        padding: 0px 15px 0px 40px;
-        display: flex;
-        align-items: center;
-        background-repeat: no-repeat;
-        border: 1px solid $mercury;
-        width: 288px;
-        height: 48px;
-        border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
-        @include tablet {
-            margin-right: 1.5rem;
-            padding-right: 3.3rem;
-            width: 10rem;
-            height: 55px;
-        }
-    }
-    &__iconplus {
-        padding-right: 10px;
-    }
-    &__upload {
-        width: 224px;
-        height: 48px;
-        margin-top: 8px;
-        background-color: $Brainflix-blue-light;
-        color: $white;
-        border: 1px solid $Brainflix-blue-light;
-        border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
-        margin-bottom: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @include tablet {
-            margin-top: 0;
-            height: 60px;
-            width: 150px;
-            margin-left: 24px;
-            @include tablet-paragraph;
-        }
-    }
-    &__thumbimage {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        margin-left: 16px;
-        margin-top: 8px;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-    }
-}

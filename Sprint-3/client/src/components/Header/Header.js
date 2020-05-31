@@ -9,14 +9,14 @@ import Thumbimage from '../../Assets/Images/Mohan-muruge.jpg';
 const Header = (props) => {
  return ( 
      <header className = "header">
-        <span className="header__wrapper">
-          <Link to="/" >
-          <img className ="header__logo" src ={Logo} alt="logo of the site"/>
+        
+          <Link  className="header__wrapper" to="/" >
+          <img src ={Logo} alt="logo of the site"/>
           </Link>
         
-        </span>
        
-           <nav className="header__navcontainer">
+       
+         
            <form className ="header__formcontainer">
             <input id="searchicon"className ="header__searchicon header__search" type="text" placeholder="  Search" name="search"/>
             <Link to="/UploadPage" style={{ textDecoration: 'none' }}>
@@ -25,7 +25,7 @@ const Header = (props) => {
            <img className ="header__thumbimage" src = {Thumbimage} alt="Nav bar thumb nail"/>
           </form>
           
-           </nav>
+           
       </header>
       );
 }
