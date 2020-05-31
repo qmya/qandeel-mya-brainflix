@@ -33,9 +33,7 @@
         position: absolute;
         bottom: 8px;
         justify-content: center;
-        @include tablet {
-            // width: 668px;
-        }
+        @include tablet {}
     }
     &__time {
         display: none;
@@ -60,12 +58,8 @@
         margin-left: 8px;
         display: flex;
         align-items: center;
-        @include tablet {
-            // width: 519px;
-        }
-        @include desktop {
-            // width: 751px;
-        }
+        @include tablet {}
+        @include desktop {}
     }
     &__insideline {
         height: 5px;

@@ -12,7 +12,6 @@
         height: 10.53rem;
         @include tablet {
             padding-left: 16px;
-            // padding-top: 10px;
             flex-direction: row;
             align-items: center;
             height: 88px;
@@ -23,28 +22,17 @@
             margin: 0 60px;
         }
         &__wrapper {
-            // height: 48px;
             display: flex;
             align-self: center;
-            // padding-top: 5px;
             height: 33px;
             @include tablet {
                 margin: 0;
                 margin-right: 169px;
                 height: 2rem;
-                // padding-left: 16px;
             }
             @include desktop {
                 margin-right: 509px;
             }
-            // &__logo {
-            //     height: 33px;
-            //     @include tablet {
-            //         margin: 0;
-            //         margin-right: 169px;
-            //         height: 2rem;
-            //         padding-left: 16px;
-            //     }
         }
         &__formcontainer {
             display: flex;
@@ -59,7 +47,6 @@
                 align-items: center;
                 flex-wrap: nowrap;
                 padding: 0;
-                // padding-left: 38px;
             }
         }
         &__search {
@@ -109,7 +96,6 @@
                 margin: 0;
                 height: 55px;
                 width: 103px;
-                // margin-left: 24px;
                 @include tablet-paragraph;
             }
         }
