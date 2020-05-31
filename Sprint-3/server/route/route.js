@@ -17,8 +17,7 @@ router.get('/:id',(request ,response) => {
 })
  
 router.post('/', (request,response) => {
-    console.log("here")
-    let newVideo =  {
+   let newVideo =  {
         "id": uuidv4(),
         "title": request.body.title,
         "channel": "Todd Welch",
